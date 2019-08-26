@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+    <!-- begin::Head -->
+    <head>
+        <meta charset="utf-8" />
+        <title>My Profile</title>
+        <meta name="description" content="Latest updates and statistic charts">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--begin::Base Styles -->  
+        <!--begin::Page Vendors -->
+        <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Page Vendors -->
+        <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+        <!--        <link href="assets/demo/demo7/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
+        <link href="css/style.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style_r.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style_j.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <!--end::Base Styles -->
+    </head>
+    <!-- end::Head -->
+    <!-- end::Body -->
+    <body  class="m-page--wide m-header--fixed m-header--fixed-mobile m-footer--push m-aside--offcanvas-default"  >
+        <!-- begin:: Page -->
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+            <!-- begin::Header -->
+            <header id="m_header" class="m-grid__item	m-header "  m-minimize="minimize" m-minimize-offset="200" m-minimize-mobile-offset="200" >
+                <div class="m-header__top">
+                    <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                        <div class="m-stack m-stack--ver m-stack--desktop">
+                            <!-- begin::Brand -->
+                            <div class="m-stack__item m-brand">
+                                <div class="m-stack m-stack--ver m-stack--general m-stack--inline">
+                                    <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                                        <a href="index.html" class="m-brand__logo-wrapper">
+                                            <img src="images/header_logo.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="m-stack__item m-stack__item--middle m-brand__tools">
+                                        <!-- begin::Responsive Header Menu Toggler-->
+                                        <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
+                                            <span></span>
+                                        </a>
+                                        <!-- end::Responsive Header Menu Toggler-->
+                                        <!-- begin::Topbar Toggler-->
+                                        <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
+                                            <i class="flaticon-more"></i>
+                                        </a>
+                                        <!--end::Topbar Toggler-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- end::Brand -->		
+                            <!-- begin::Topbar -->
+                            <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+                                <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
+                                    <div class="m-stack__item m-topbar__nav-wrapper">
+                                        <ul class="m-topbar__nav m-nav m-nav--inline">
+                                            <li class="m-nav__item wp">
+                                                <a href="#" class="m-nav__link">
+                                                    <span class="m-nav__link-icon">
+                                                        <span class="m-nav__select_box">WP Mail</span></span></a>
+                                            </li>
+                                            <li class="m-nav__item wp">
+                                                <a href="#" class="m-nav__link"><span class="m-nav__link-icon">
+                                                        <span class="m-nav__select_box">WP Cloud Desktop</span></span></a>
+                                            </li>
+                                            <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1">
+                                                <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+                                                    <!--                                                    <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>-->
+                                                    <span class="m-nav__link-icon">
+                                                        <span class="m-nav__link-icon-wrapper">
+                                                            <img src="images/notification_icon.png" alt=""/>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                                <div class="m-dropdown__wrapper">
+                                                    <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+                                                    <div class="m-dropdown__inner">
+                                                        <div class="m-dropdown__header m--align-center" style="background: url(assets/app/media/img/misc/notification_bg.jpg); background-size: cover;">
+                                                            <span class="m-dropdown__header-title">
+                                                                9 New
+                                                            </span>
+                                                            <span class="m-dropdown__header-subtitle">
+                                                                User Notifications
+                                                            </span>
+                                                        </div>
+                                                        <div class="m-dropdown__body">
+                                                            <div class="m-dropdown__content">
+                                                                <ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#topbar_notifications_notifications" role="tab">
+                                                                            Alerts
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#topbar_notifications_events" role="tab">
+                                                                            Events
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#topbar_notifications_logs" role="tab">
+                                                                            Logs
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
+                                                                        <div class="m-scrollable" data-scrollable="true" data-max-height="250" data-mobile-max-height="200">
+                                                                            <div class="m-list-timeline m-list-timeline--skin-light">
+                                                                                <div class="m-list-timeline__items">
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge -m-list-timeline__badge--state-success"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            12 new users registered
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            Just now
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            System shutdown
+                                                                                            <span class="m-badge m-badge--success m-badge--wide">
+                                                                                                pending
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            14 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            New invoice received
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            20 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            DB overloaded 80%
+                                                                                            <span class="m-badge m-badge--info m-badge--wide">
+                                                                                                settled
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            1 hr
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            System error -
+                                                                                            <a href="#" class="m-link">
+                                                                                                Check
+                                                                                            </a>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            2 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item m-list-timeline__item--read">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                            <span class="m-badge m-badge--danger m-badge--wide">
+                                                                                                urgent
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            7 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item m-list-timeline__item--read">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            Production server down
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            3 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            Production server up
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            5 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                                                                        <div class="m-scrollable" data-scrollable="true" data-max-height="250" data-mobile-max-height="200">
+                                                                            <div class="m-list-timeline m-list-timeline--skin-light">
+                                                                                <div class="m-list-timeline__items">
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-success"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            Just now
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-danger"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New invoice received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            20 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-success"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            Production server up
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            5 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            7 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            System shutdown
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            11 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            Production server down
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            3 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                                                                        <div class="m-stack m-stack--ver m-stack--general" style="min-height: 180px;">
+                                                                            <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                                                                                <span class="">
+                                                                                    All caught up!
+                                                                                    <br>
+                                                                                    No new logs.
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click">
+
+                                                <div class="kt-header__topbar-item kt-header__topbar-item--user">    
+                                                    <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,0px" aria-expanded="false">
+                                                        <div class="kt-header__topbar-user">
+                                                            <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+                                                            <span class="kt-header__topbar-username kt-hidden-mobile">Sean</span>
+
+                                                            <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                                            <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1243px, 64px, 0px);">
+                                                        <!--begin: Head -->
+                                                        <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" style="background-image: url(./assets/media/misc/bg-1.jpg)">
+                                                            <div class="kt-user-card__avatar">
+                                                                <p>s</p>
+                                                                <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                                                <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">Sean Stone</span>
+                                                            </div>                                                           
+
+                                                        </div>
+                                                        <!--end: Head -->
+
+                                                        <!--begin: Navigation -->
+                                                        <div class="kt-notification">
+                                                            <a href="#" class="kt-notification__item">                                                               
+                                                                <div class="kt-notification__item-details">
+                                                                    <div class="kt-notification__item-title kt-font-bold my_profile_one">
+                                                                        My Profile
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="kt-notification__item">                                                                
+                                                                <div class="kt-notification__item-details">
+                                                                    <div class="kt-notification__item-title kt-font-bold my_profile_two">
+                                                                        My Messages
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </a>
+
+
+
+                                                            <div class="kt-notification__custom kt-space-between">
+                                                                <a href="/metronic/preview/demo1/custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Log Out</a>
+                                                            </div>
+                                                        </div>
+                                                        <!--end: Navigation -->    </div>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end::Topbar -->
+                        </div>
+                    </div>
+                </div>
+                <div class="m-header__bottom">
+                    <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                        <div class="m-stack m-stack--ver m-stack--desktop">
+                            <!-- begin::Horizontal Menu -->
+                            <div class="m-stack__item m-stack__item--middle m-stack__item--fluid">
+                                <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn">
+                                    <i class="la la-close"></i>
+                                </button>
+                                <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light "  >
+                                    <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="index.html" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Dashboard
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    System
+                                                </span>
+                                            </a>
+                                        </li> 
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Organizations
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" aria-haspopup="true">
+                                            <a  href="javascript:;" class="m-menu__link m-menu__toggle">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Exchange
+                                                </span>
+                                                <i class="m-menu__hor-arrow la la-angle-down"></i>
+                                                <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                            </a>
+                                            <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">                                               
+                                                <ul class="m-menu__subnav">
+                                                    <li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
+                                                        <a  href="javascript:;" class="m-menu__link m-menu__toggle">
+                                                            <span class="m-menu__link-text">
+                                                                Mailboxes
+                                                            </span>
+                                                            <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                            <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                        </a>
+                                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
+
+                                                            <ul class="m-menu__subnav">
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Distribution List
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Contact List
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Bulk Module
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Task Running
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Exchange Logs
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Mailbox Plans
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="m-menu__item "  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Migrations
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Payment
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Tickets
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end::Horizontal Menu -->	
+                            <!--begin::Search-->
+
+                            <!--end::Search-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end::Header -->		
+            <!-- begin::Body -->
+            <div class="m-grid__item main_content">
+                <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+                        <!-- BEGIN: Subheader -->
+                        <div class="m-subheader ">
+                            <div class="d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="m-subheader__title m-subheader__title--separator">
+                                        User Profile
+                                    </h3>
+                                    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                                        <li class="m-nav__item m-nav__item--home">
+                                            <a href="#" class="m-nav__link m-nav__link--icon">
+                                                <i class="m-nav__link-icon la la-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="m-nav__separator"></li>
+                                        <li class="m-nav__item">                                         
+                                            <span class="m-nav__link-text">
+                                                User Profile
+                                            </span>                                          
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch" m-quicksearch-mode="default">
+                                    <select class="form-control m-bootstrap-select m_selectpicker">
+                                        <option>
+                                            dir.com
+                                        </option>
+                                        <option>
+                                            dir.com
+                                        </option>
+                                        <option>
+                                            dir.com
+                                        </option>
+                                    </select>
+                                    <span class="m-pro_text">Pro Plan 200 GB</span>
+
+                                </div>
+                            </div>
+                            <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch_two" m-quicksearch-mode="default">
+                                <select class="form-control m-bootstrap-select m_selectpicker">
+                                    <option>
+                                        dir.com
+                                    </option>
+                                    <option>
+                                        dir.com
+                                    </option>
+                                    <option>
+                                        dir.com
+                                    </option>
+                                </select>
+                                <span class="m-pro_text">Pro Plan 200 GB</span>
+
+                            </div>
+                        </div>
+                        <!-- END: Subheader -->
+                        <div class="m-content">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <!--begin:: Widgets/Best Sellers-->
+                                    <div class="my_profile_top_section">
+                                        <div class="my_profile_top_section_img">
+                                            <img src="images/profile-img.png">
+                                        </div>
+                                        <div class="my_profile_top_section_content">
+                                            <div class="my_profile_top_section_content_title">
+                                                <h3>Sean Cormier</h3>
+                                            </div>
+                                            <div class="my_profile_top_section_content_email">
+                                                <a href="mailto:administrative@isabel.net">administrative@isabel.net</a>
+                                            </div>
+                                            <div class="my_profile_top_section_content_btn">
+                                                <a href="#" class="green_btn">Change Password</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my_profile_bottom_section">
+                                        <div class="my_profile_bottom">                                
+                                            <div class="row">                                        
+                                                <div class="col-sm-3">
+                                                    <div class="my_profile_bottom_left">
+                                                        <h3>Profile Details</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <div class="my_profile_bottom_right">
+                                                        <div class="account_tab">
+                                                            <ul class="tabs">
+                                                                <li class="active" rel="tab1"><img src="images/a1.png" alt=""> Account Details</li>
+                                                                <li rel="tab2" class=""><img src="images/a2.png" alt=""> Customer Information</li>
+                                                                <li rel="tab3"><img src="images/a3.png" alt=""> Contact Information</li>
+                                                                <li rel="tab4"><img src="images/a4.png" alt=""> Peers</li>                                                                
+                                                            </ul>                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accout_content tab_general">
+                                            <div class="tab_container"> 
+                                                <h3 class="tab_drawer_heading d_active" rel="tab1"><img src="images/a1.png" alt=""> Account Details</h3>
+                                                <div id="tab1" class="tab_content active_content">
+                                                    <div class="profile_first_tab">
+                                                        <div class="profile_first_tab_top">
+                                                            <span>*</span> Required Fields
+                                                        </div>
+                                                        <div class="profile_form">
+                                                            <form>
+                                                                <div class="profile_form_main">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <label>User Name <span>*</span></label>
+                                                                            <input type="text" name="username" class="input_text" value="Sean" disabled required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>First Name <span>*</span></label>
+                                                                            <input type="text" name="firstname" class="input_text" placeholder="Enter first name" required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>Last Name <span>*</span></label>
+                                                                            <input type="text" name="lastname" class="input_text" placeholder="Enter last name" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <label>Email <span>*</span></label>
+                                                                            <input type="text" name="email"  class="input_text" value="administrative@isabel.net" disabled required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>Secondary Email <span>*</span></label>
+                                                                            <input type="text" name="secondaryemail" class="input_text" placeholder="Enter secondary email" required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>Primary Phone <span>*</span></label>
+                                                                            <input type="tel" name="primaryphone" class="input_text" placeholder="Enter primary phone" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <label>Secondary Phone <span>*</span></label>
+                                                                            <input type="tel" name="secondaryphone" class="input_text" placeholder="Enter secondary phone" required>
+                                                                        </div>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="profile_form_main_btn">
+                                                                    <input type="submit" class="input_submit" value="Save">
+                                                                    <input type="reset" class="input_reset" value="Cancel">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <h3 class="tab_drawer_heading" rel="tab2"><img src="images/a2.png" alt=""> Customer Information</h3>
+                                                <div id="tab2" class="tab_content">
+                                                    <div class="profile_first_tab">
+                                                        <div class="profile_first_tab_top">
+                                                            <span>*</span> Required Fields
+                                                        </div>
+                                                        <div class="profile_form">
+                                                            <form>
+                                                                <div class="profile_form_main">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <label>Company Name <span>*</span></label>
+                                                                            <input type="text" name="comapnyname" class="input_text" placeholder="Enter company name"  required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>Address <span>*</span></label>
+                                                                            <input type="text" name="address" class="input_text" placeholder="Enter address" required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>City <span>*</span></label>
+                                                                            <input type="text" name="city" class="input_text" placeholder="Enter city" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <label>Country <span>*</span></label>
+                                                                            <select required>
+                                                                                <option>Select</option>
+                                                                                <option>USA</option>
+                                                                                <option>India</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>State <span>*</span></label>
+                                                                            <input type="text" name="state" class="input_text" placeholder="Enter state" required>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label>Zip Code <span>*</span></label>
+                                                                            <input type="tel" name="zipcode" class="input_text" placeholder="Enter zip code" required>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                                <div class="profile_form_main_btn">
+                                                                    <input type="submit" class="input_submit" value="Save">
+                                                                    <input type="reset" class="input_reset" value="Cancel">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <h3 class="tab_drawer_heading" rel="tab3"><img src="images/a3.png" alt=""> Contact Information</h3>
+                                                <div id="tab3" class="tab_content">
+                                                    <div class="profile_third_tab">
+                                                        <div class="profile_third_tab_top">
+                                                            <a href="#" class="green_btn"><i class="la la-plus"></i> Add Contact</a>
+                                                        </div>
+                                                        <div class="profile_third_table">
+                                                            <div class="portlet box">                                            
+                                                                <div class="portlet-body">
+                                                                    <div class="table-responsive table-hover">
+                                                                        <table class="table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th scope="col">Type </th>
+                                                                                    <th scope="col">Title </th>
+                                                                                    <th scope="col">Name </th>
+                                                                                    <th scope="col">Value </th>
+                                                                                    <th scope="col">Creation Date </th>
+                                                                                    <th scope="col">Action</th>                                                                
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td> Mobile </td>
+                                                                                    <td> Mrs </td>
+                                                                                    <td> Warren Hibbard </td>
+                                                                                    <td> test@gmail.com </td>
+                                                                                    <td> Apr 20, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Email </td>
+                                                                                    <td> Mr </td>
+                                                                                    <td> Matthew Harrison </td>
+                                                                                    <td> harrison@gmail.com </td>
+                                                                                    <td> Apr 20, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Email </td>
+                                                                                    <td> Mr </td>
+                                                                                    <td> Don Haynes </td>
+                                                                                    <td> don_haynes@gmail.com </td>
+                                                                                    <td> Apr 19, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Land Line </td>
+                                                                                    <td> Mrs </td>
+                                                                                    <td> Stacey Diaz </td>
+                                                                                    <td> stacey@gmail.com </td>
+                                                                                    <td> Apr 19, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Mobile </td>
+                                                                                    <td> Mr </td>
+                                                                                    <td> Jack Killinger </td>
+                                                                                    <td> jack@ymail.com </td>
+                                                                                    <td> Apr 19, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Email </td>
+                                                                                    <td> Mr </td>
+                                                                                    <td> Phyllis Owens </td>
+                                                                                    <td> owens123@hotmail.com </td>
+                                                                                    <td> Apr 18, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Land Line </td>
+                                                                                    <td> Mrs </td>
+                                                                                    <td> Emma Spencer </td>
+                                                                                    <td> emma@gmail.com </td>
+                                                                                    <td> Apr 18, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Mobile </td>
+                                                                                    <td> Mrs </td>
+                                                                                    <td> Maria Freeman </td>
+                                                                                    <td> maria@yahoo.com </td>
+                                                                                    <td> Apr 17, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Email </td>
+                                                                                    <td> Mrs </td>
+                                                                                    <td> Mary McMillin </td>
+                                                                                    <td> mary@hotmail.com </td>
+                                                                                    <td> Apr 17, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> Land Line </td>
+                                                                                    <td> Mr </td>
+                                                                                    <td> James Mosier </td>
+                                                                                    <td> james@gmail.com </td>
+                                                                                    <td> Apr 17, 2019 </td>
+                                                                                    <td> <a href="#" class="btn"><img src="images/edit_icon.png" alt=""></a> <a href="#" class="delete_btn"><img src="images/delete_icon.png" alt=""></a></td>                                                                                                                              
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_pagination">
+                                                                <div class="dataTables_paginate paging_simple_numbers">
+                                                                    <ul class="pagination">
+                                                                        <li class="paginate_button page-item previous disabled">
+                                                                            <a href="#" class="page-link">
+                                                                                <img src="images/pagi_arrow_left.png" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item previous disabled">
+                                                                            <a href="#" class="page-link">
+                                                                                <i class="la la-angle-left"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item active">
+                                                                            <a href="#"  class="page-link">1</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">2</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">3</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">4</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">5</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item next">
+                                                                            <a href="#"  class="page-link">
+                                                                                <i class="la la-angle-right"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item next">
+                                                                            <a href="#"  class="page-link">
+                                                                                <img src="images/pagi_arrow.png" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <h3 class="tab_drawer_heading" rel="tab4"><img src="images/a4.png" alt=""> Peers</h3>
+                                                <div id="tab4" class="tab_content">
+                                                    <div class="profile_third_tab">
+                                                        <div class="profile_third_tab_top">
+                                                            <a href="#" class="green_btn"><i class="la la-plus"></i> Add Peer</a>
+                                                        </div>
+                                                        <div class="profile_third_table peer">
+                                                            <div class="portlet box"> 
+                                                                <div class="no_scrollbar_hr">
+                                                                    <div class="portlet-body">
+                                                                        <div class="table-responsive table-hover">
+                                                                            <table class="table">
+                                                                                <thead>
+                                                                                    <tr>                                                                                   
+                                                                                        <th scope="col">Name </th>                                                                                   
+                                                                                        <th scope="col">Creation Date </th>
+                                                                                        <th scope="col">Email</th>                                                                
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>                                                                                  
+                                                                                        <td> Warren Hibbard </td>
+                                                                                        <td> Apr 20, 2019 </td>    
+                                                                                        <td> test@gmail.com </td>                                                                                                                                                                                                                                                                 
+                                                                                    </tr>
+                                                                                    <tr>                                                                                    
+                                                                                        <td> Matthew Harrison </td>                                                                                    
+                                                                                        <td> Apr 20, 2019 </td>   
+                                                                                        <td> harrison@gmail.com </td>
+                                                                                    </tr>
+                                                                                    <tr>                                                                                    
+                                                                                        <td> Don Haynes </td>                                                                                    
+                                                                                        <td> Apr 19, 2019 </td>
+                                                                                        <td> don_haynes@gmail.com </td>                                                                                                                                                                                                                
+                                                                                    </tr>
+                                                                                    <tr>                                                                                   
+                                                                                        <td> Stacey Diaz </td>                                                                                    
+                                                                                        <td> Apr 19, 2019 </td>
+                                                                                        <td> stacey@gmail.com </td>                                                                                                                                                                                                              
+                                                                                    </tr>
+                                                                                    <tr>                                                                                   
+                                                                                        <td> Jack Killinger </td>                                                                                    
+                                                                                        <td> Apr 19, 2019 </td>   
+                                                                                        <td> jack@ymail.com </td>
+                                                                                    </tr>
+                                                                                    <tr>                                                                                   
+                                                                                        <td> Phyllis Owens </td>                                                                                    
+                                                                                        <td> Apr 18, 2019 </td>
+                                                                                        <td> owens123@hotmail.com </td>                                                                                                                                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>                                                                                   
+                                                                                        <td> Emma Spencer </td>                                                                                    
+                                                                                        <td> Apr 18, 2019 </td>
+                                                                                        <td> emma@gmail.com </td>                                                                                                                                                                                                               
+                                                                                    </tr>
+                                                                                    <tr>                                                                                   
+                                                                                        <td> Maria Freeman </td>                                                                                    
+                                                                                        <td> Apr 17, 2019 </td>
+                                                                                        <td> maria@yahoo.com </td>                                                                                                                                                                                                         
+                                                                                    </tr>
+                                                                                    <tr>                                                                                  
+                                                                                        <td> Mary McMillin </td>                                                                                    
+                                                                                        <td> Apr 17, 2019 </td>
+                                                                                        <td> mary@hotmail.com </td>
+
+                                                                                    </tr>
+                                                                                    <tr>                                                                                  
+                                                                                        <td> James Mosier </td>                                                                                    
+                                                                                        <td> Apr 17, 2019 </td>
+                                                                                        <td> james@gmail.com </td>                                                                                                                                                                                                   
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile_pagination">
+                                                                <div class="dataTables_paginate paging_simple_numbers">
+                                                                    <ul class="pagination">
+                                                                        <li class="paginate_button page-item previous disabled">
+                                                                            <a href="#" class="page-link">
+                                                                                <img src="images/pagi_arrow_left.png" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item previous disabled">
+                                                                            <a href="#" class="page-link">
+                                                                                <i class="la la-angle-left"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item active">
+                                                                            <a href="#"  class="page-link">1</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">2</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">3</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">4</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item ">
+                                                                            <a href="#"  class="page-link">5</a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item next">
+                                                                            <a href="#"  class="page-link">
+                                                                                <i class="la la-angle-right"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="paginate_button page-item next">
+                                                                            <a href="#"  class="page-link">
+                                                                                <img src="images/pagi_arrow.png" alt="">
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end:: Widgets/Best Sellers-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="side_notificatiion">
+                    <!-- side_notification start-->                      
+                    <button id="showRight" class="active"><img src="images/question.png" alt=""/></button>
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                        <button id="showRight1"><img src="images/close.png" alt=""/></button>
+
+                        <h3>Help</h3>
+                        <h2>Title</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <ul>
+                            <li><img src="images/server_Icon1.png" alt=""/></li>
+                            <li><img src="images/server_Icon1.png" alt=""/></li>
+                        </ul>
+                    </nav>
+                    <!-- side_notification finish-->
+                </div>
+            </div>
+            <!-- end::Body -->
+            <!-- begin::Footer -->
+            <footer class="m-grid__item m-footer ">
+                <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                    <div class="m-footer__wrapper">
+                        <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+                            <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
+                                <span class="m-footer__copyright">
+                                    2019 © WorldPosta
+                                    <!--                                    <a href="https://keenthemes.com" class="m-link">
+                                                                            Keenthemes
+                                                                        </a>-->
+                                </span>
+                            </div>
+                            <div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
+                                <ul class="m-footer__nav m-nav m-nav--inline m--pull-right">
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                About
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#"  class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                Privacy
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                T&C
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                Purchase
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item m-nav__item--last">
+                                        <a href="#" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
+                                            <i class="m-nav__link-icon flaticon-info m--icon-font-size-lg3"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end::Footer -->
+        </div>        
+        <!-- end:: Page -->    	
+        <!--begin::Base Scripts -->
+        <script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+        <script src="js/scripts.bundle.js" type="text/javascript"></script>
+        <script src="js/classic.js" type="text/javascript"></script>
+        <!--end::Base Scripts -->   
+        <!--begin::Page Vendors -->
+        <script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+        <!--end::Page Vendors -->  
+        <!--begin::Page Snippets -->
+        <script src="assets/app/js/dashboard.js" type="text/javascript"></script>         
+        <!--begin::Page Resources -->
+
+
+        <script src="js/bootstrap-select.js" type="text/javascript"></script>
+
+        <script src="js/custom.js" type="text/javascript"></script>
+        <script>
+            var menuRight = document.getElementById('cbp-spmenu-s2'),
+                    showRight = document.getElementById('showRight'),
+                    showRightPush = document.getElementById('showRightPush'),
+                    body = document.body;
+            showRight1 = document.getElementById('showRight1'),
+                    showRight.onclick = function () {
+                        classie.toggle(this, 'active');
+                        classie.toggle(menuRight, 'cbp-spmenu-open');
+
+                    };
+            showRight1.onclick = function () {
+                classie.toggle(this, 'active');
+                classie.toggle(menuRight, 'cbp-spmenu-open');
+
+            };
+
+        </script>
+    </body>
+    <!-- end::Body -->
+</html>
+
