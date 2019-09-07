@@ -254,7 +254,7 @@ a.create_link, a.create_link:hover {
 
 /* ---- Mail Page Style :: START ---- */
 .m-stack__item.m-stack__item--middle.m-brand__logo,.m-brand {
-    background: #3a3a3c;
+    background:transparent;
 }
 .m-header .m-header__top {
     background-color: #3a3a3c;
@@ -316,6 +316,11 @@ a.create_link, a.create_link:hover {
 .m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__link .m-menu__link-text {
     color: #2c2c2e;
     background-color: #8cc63f;
+    padding-right: 23px;
+    border-radius: 6px;
+}
+.m-menu__item.m-menu__item--active{
+    padding-left: 10px !important;
 }
 .m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-text{
     color: #fff; 
@@ -544,6 +549,7 @@ li.paginate_button.page-item.previous a i {
     color:#666674;
     font-size: 14px;
     font-family: 'OpenSans-SemiBold';
+    outline: 0
 }
 .m-header-search__form input::-webkit-input-placeholder{
     color:#666674;
@@ -743,7 +749,7 @@ li.paginate_button.page-item.previous a i {
 }
 .m-portlet.m-portlet--full-height .m-portlet__body {
     height: auto;
-    padding: 24px 0 30px;
+    padding: 6px 0 0px;
 }
 .m-form .m-form__actions {
     padding: 0;
@@ -779,7 +785,7 @@ li.paginate_button.page-item.previous a i {
     color: #35353f;
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
-    margin-top: 23px;
+    margin-top: 10px;
     display: table;
     text-decoration: underline;
 }
@@ -846,7 +852,7 @@ a.m-btn.m-btn--custom.m-btn--icon.input_reset {
     height: 38px;
 }
 .m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-text{
-    padding: 0 23px;
+    padding: 0 0px 0 23px;
 }
 .m-header-menu .m-menu__nav>.m-menu__item {
     padding: 0 2px 0 0;
@@ -1138,7 +1144,7 @@ button.btn.dropdown-toggle.btn-light{
 }
 
 .m-topbar .m-topbar__nav.m-nav>.m-nav__item.m-topbar__user-profile{
-    padding-top: 32px;
+    /* padding-top: 32px; */
     padding-left:0px;
     padding-right: 0px;
 }
@@ -1149,6 +1155,124 @@ button.btn.dropdown-toggle.btn-light{
     background-color: #2c2c2e;
     color: white;
 }
+/*New Code*/
+.m-topbar__wp-cloud{
+    color: #fff;
+    line-height: 110px;
+}
+.wp-link .m-nav__link-icon-wrapper>i{
+    color: #8cc63f !important;
+    font-size: 20px !important;
+}
+.wp-link .m-nav__link-icon-wrapper{
+    margin: 0 3px 0 10px !important;
+}
+.search-block{
+    padding: 42px 0;
+}
+.icon-green{
+    color: #8cc63f !important;
+
+}
+.search-input{
+    background: transparent;
+    border: 1px solid rgba(86, 88, 97, 0.4392156862745098);
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: 0;
+    border-left: 0;
+   
+}
+.search-icon--input{
+    border: 1px solid rgba(86, 88, 97, 0.4392156862745098);
+    border-right: 0;
+    padding: 2px 0 2px 8px;
+}
+
+@media(max-width: 767px){
+    .m-topbar--on .margin-items-mobile{
+        
+        visibility: visible;
+    }
+    .margin-items-mobile{
+        margin-top: 46px;
+        margin-bottom: -46px;
+        visibility: hidden;
+    }
+    .m-topbar__nav.m-nav.m-nav--inline{
+        margin-top: -44px !important;
+    }
+    .m-subheader{
+        padding-top: 106px !important;
+        transition: all .3s ease;
+    }
+    .m-topbar--on .m-subheader{
+        padding-top: 210px !important;
+        transition: all .3s ease;
+    }
+}
+
+@media(min-width: 900px){
+    .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head .m-portlet__head-tools .m-tabs-line{
+    left: 188px;
+    }
+}
+.invoic-paying li{
+    list-style: none;
+    display: inline-block;
+}
+.invoic-paying li svg{
+    width: 150px;
+    border: 1px solid #8cc63f;
+    padding: 0 14px;
+    height: 64px;
+}
+.default-btn, .default-btn a:not([href]), .default-btn a, .default-btn span, .default-btn a:hover{
+    border: 0 !important;
+    color: #fff !important;
+    text-decoration: none;
+    background: #8cc63f;
+}
+
+.m-header--minimize-on .m-topbar .m-topbar__nav.m-nav .search-block{
+    padding: 29px 0;
+}
+.m-header--minimize-on .m-topbar .m-topbar__nav.m-nav>.m-nav__item.m-topbar__user-profile--img>.m-nav__link{
+    margin-top: -19px;
+}
+.m-header--minimize-on .m-topbar .m-topbar__nav.m-nav>.m-nav__item>#m_topbar_notification_icon{
+    margin-top: -9px;
+}
+.m-header--minimize-on .m-topbar .m-topbar__nav.m-nav>.m-nav__item>.m-nav__link{
+    margin-top: -15px;
+}
+.m-header-search__form .dataTables_length select.form-control{
+    background-color: #f4f5f8;
+    height: 31px !important;
+    color: #35353f;
+    font-size: 14px;
+    font-family: 'OpenSans-Regular';
+    border: 0 !important;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 71px;
+    vertical-align: middle;
+    background-image: url(../images/select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 98% 55%;
+    margin-right: 5px;
+    padding: 6px 13px 8px;
+    line-height: normal;
+}
+.m-subheader select{
+    width: 15%
+}
+
+/******/
 .m-topbar .m-topbar__nav.m-nav>.m-nav__item>.m-nav__link .m-nav__link-icon .m-nav__link-icon-wrapper{
     margin: 0 10px 0 10px;
 }
@@ -1404,13 +1528,36 @@ a.btn.btn-label.btn-label-brand.btn-sm.btn-bold{
 .cbp-spmenu-right{
     z-index: 11111;
 }
-button#showRight{
+/* button#showRight{
     background: none;
     border:none;
     position:fixed;
     top:0;
     right:0;
     bottom: 0;
+} */
+button#showRight{
+
+    border: none;
+    position: fixed;
+    top: 401px;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 15px 1px rgba(81,77,92,.2);
+    -moz-box-shadow: 0 0 15px 1px rgba(81,77,92,.2);
+    box-shadow: 0 0 15px 1px rgba(81,77,92,.2);
+    border-radius: 8px 0 0 8px;
+    width: 38px;
+    cursor: pointer;
+}
+.help-icon{
+    color: #c1bfd0; font-size: 22px
+}
+
+table th, table td, a , button, select, select > option, li, .btn{
+    font-family: 'OpenSans-SemiBold' !important;
 }
 button#showRight1{
     background: none;
