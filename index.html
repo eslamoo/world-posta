@@ -54,6 +54,18 @@
 								<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
 									<div class="m-stack__item m-topbar__nav-wrapper">
 										<ul class="m-topbar__nav m-nav m-nav--inline">
+                                                <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img margin-items-mobile" m-dropdown-toggle="click" aria-expanded="true"" >
+                                                        <a href="#" class="m-nav__link m-dropdown__toggle wp-link" style="cursor:text;margin-right: 21px;">
+                                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
+                                                            <span class="m-nav__link-icon">
+                                                                <span class="m-nav__link-icon-wrapper">
+                                                                    <i class="fa fa-clock-o fa-spin fa-3x" style="color: rgba(255, 255, 255, 0.54) !important"></i>
+                                                                </span>
+                                                            </span>
+                                                            <span class="m-topbar__wp-cloud" style="color: rgba(255, 255, 255, 0.54) !important">20 Days </span>
+                                                        </a>
+                                                        
+                                                    </li>
                                             	<li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img margin-items-mobile">
                                                         <div class="search-block">
                                                             <p-autocomplete field="itemName" class="ng-tns-c3-0 ng-pristine ng-valid ng-touched">
@@ -70,88 +82,103 @@
                                                         </div>
                                                         
                                                     </li>	
-                                                    <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img margin-items-mobile" m-dropdown-toggle="click" aria-expanded="true"" >
-                                                        <a href="#" class="m-nav__link m-dropdown__toggle wp-link" style="cursor:text;">
-                                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
-                                                            <span class="m-nav__link-icon">
-                                                                <span class="m-nav__link-icon-wrapper">
-                                                                    <i class="fa fa-clock-o fa-spin" style="color: #f23454 !important"></i>
+                                                  
+                                                    	
+                                                    <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1" aria-expanded="true">
+                                                            <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+                                                                <!-- <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span> -->
+                                                                <span class="m-nav__link-icon">
+                                                                    <span class="m-nav__link-icon-wrapper">
+                                                                        <img src="images/notification.png" width="30" alt="" style="    opacity: .7;"/>
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <span class="m-topbar__wp-cloud" style="color: #f23454 !important">20 Days </span>
-                                                        </a>
-                                                        
-                                                    </li>
-                                                    <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img ">
-                                                        <a href="#" class="m-nav__link m-dropdown__toggle wp-link">
-                                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
-                                                            <span class="m-nav__link-icon">
-                                                                <span class="m-nav__link-icon-wrapper">
-                                                                    <i class="fa fa-inbox"></i>
+                                                            </a>
+                                                            <div class="m-dropdown__wrapper" style="z-index: 102;">
+                                                                <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+                                                                <div class="m-dropdown__inner">
+                                                                    <div class="m-dropdown__header m--align-center" style="    background-color: #8cc63f;">
+                                                                        <span class="m-dropdown__header-title">9 New</span>
+                                                                        <span class="m-dropdown__header-subtitle">User Notifications</span>
+                                                                    </div>
+                                                                    <div class="m-dropdown__body">
+                                                                        <div class="m-dropdown__content">
+                                                                            <ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
+                                                                                <li class="nav-item m-tabs__item">
+                                                                                    <a class="nav-link m-tabs__link active" data-toggle="tab" href="#topbar_notifications_notifications" role="tab">
+                                                                                        Notifications
+                                                                                    </a>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                            <div class="tab-content">
+                                                                                <div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
+                                                                                    <div class="m-scrollable m-scroller ps ps--active-y" data-scrollable="true" data-height="250" data-mobile-height="200" style="height: 250px; overflow: hidden;">
+                                                                                        
+                                                                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 4px; height: 250px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 223px;"></div></div></div>
+                                                                                </div>
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </li>
+                                                    <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click" aria-expanded="true">
+                                                            <a href="#" class="m-nav__link m-dropdown__toggle qa-icon">
+                                                                <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
+                                                                <span class="m-nav__link-icon">
+                                                                    <span class="m-nav__link-icon-wrapper">
+                                                                        <!-- <i class="fa fa-th text-white"></i> -->
+                                                                        <img src="./images/menu-white.png" width="25" alt="" style="    opacity: .7;">
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <span class="m-topbar__wp-cloud">WP Mail </span>
-                                                        </a>
-                                                        
-                                                    </li>	
-                                                    <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img " style="margin-right: 25px;">
-                                                        <a href="#" class="m-nav__link m-dropdown__toggle wp-link">
-                                                            <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
-                                                            <span class="m-nav__link-icon">
-                                                                <span class="m-nav__link-icon-wrapper">
-                                                                    <i class="fa fa-cloud"></i>
-                                                                </span>
-                                                            </span>
-                                                            <span class="m-topbar__wp-cloud">WP Cloud Desktop </span>
-                                                        </a>
-                                                        
-                                                    </li>
-											<li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1" aria-expanded="true">
-												<a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
-													<!-- <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span> -->
-													<span class="m-nav__link-icon">
-														<span class="m-nav__link-icon-wrapper">
-                                                            <img src="images/notification_icon.png" alt=""/>
-														</span>
-													</span>
-												</a>
-												<div class="m-dropdown__wrapper" style="z-index: 102;">
-													<span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
-													<div class="m-dropdown__inner">
-														<div class="m-dropdown__header m--align-center" style="background: url(assets/app/media/img/misc/notification_bg.jpg); background-size: cover;">
-															<span class="m-dropdown__header-title">9 New</span>
-															<span class="m-dropdown__header-subtitle">User Notifications</span>
-														</div>
-														<div class="m-dropdown__body">
-															<div class="m-dropdown__content">
-																<ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
-																	<li class="nav-item m-tabs__item">
-																		<a class="nav-link m-tabs__link active" data-toggle="tab" href="#topbar_notifications_notifications" role="tab">
-																			Notifications
-																		</a>
-																	</li>
-																	
-																</ul>
-																<div class="tab-content">
-																	<div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
-																		<div class="m-scrollable m-scroller ps ps--active-y" data-scrollable="true" data-height="250" data-mobile-height="200" style="height: 250px; overflow: hidden;">
-																			
-																		<div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 4px; height: 250px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 223px;"></div></div></div>
-																	</div>
-																
-																</div>
-															</div>
-														</div>
-													</div>
-                                                </div>
-                                                
-											</li>
+                                                            </a>
+                                                            <div class="m-dropdown__wrapper" style="z-index: 102;">
+                                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 34.5px !important;"></span>
+                                                                <div class="m-dropdown__inner">
+                                                                    <div class="m-dropdown__header m--align-center" style="background-color: #8cc63f;">
+                                                                        <span class="m-dropdown__header-title">Quick Actions</span>
+                                                                        <span class="m-dropdown__header-subtitle">Shortcuts</span>
+                                                                    </div>
+                                                                    <div class="m-dropdown__body m-dropdown__body--paddingless">
+                                                                        <div class="m-dropdown__content">
+                                                                            <div class="m-scrollable" data-scrollable="false" data-height="380" data-mobile-height="200">
+                                                                                <div class="m-nav-grid m-nav-grid--skin-light">
+                                                                                    <div class="m-nav-grid__row">
+                                                                                        <a href="#" class="m-nav-grid__item ">
+                                                                                            <i class="m-nav-grid__icon fa fa-cloud"></i>
+                                                                                            <span class="m-nav-grid__text">WP Cloud Desktop</span>
+                                                                                        </a>
+                                                                                        <a href="#" class="m-nav-grid__item">
+                                                                                            <i class="m-nav-grid__icon fa fa-envelope"></i>
+                                                                                            <span class="m-nav-grid__text">WP Mail</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="m-nav-grid__row">
+                                                                                        <a href="#" class="m-nav-grid__item">
+                                                                                            <i class="m-nav-grid__icon fa fa-database"></i>
+                                                                                            <span class="m-nav-grid__text">Drive</span>
+                                                                                        </a>
+                                                                                        <a href="#" class="m-nav-grid__item">
+                                                                                            <i class="m-nav-grid__icon fa fa-wechat"></i>
+                                                                                            <span class="m-nav-grid__text">Chat</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+											
                                             <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
                                                     <i class="fa fa-bars icon-green"></i>
                                             </a>
 											<li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click" aria-expanded="true">
 												<a href="#" class="m-nav__link m-dropdown__toggle">
-													<span class="m-topbar__welcome">Hello,&nbsp;</span>
+													
 													<span class="m-topbar__username">Sara</span>
 													<span class="m-topbar__userpic">
 														<img src="images/avatar.png" class="m--img-rounded m--marginless m--img-centered" alt="">
@@ -160,7 +187,7 @@
 												<div class="m-dropdown__wrapper" style="z-index: 102;">
 													<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 48px;"></span>
 													<div class="m-dropdown__inner">
-														<div class="m-dropdown__header m--align-center" style="background: url(assets/app/media/img/misc/user_profile_bg.jpg); background-size: cover;">
+														<div class="m-dropdown__header m--align-center" style="background-color: #8cc63f;">
 															<div class="m-card-user m-card-user--skin-dark">
 																<div class="m-card-user__pic">
 																	<img src="images/avatar.png" class="m--img-rounded m--marginless" alt="">
@@ -754,13 +781,15 @@
                             <div class="m-portlet__body">
                                 <div class="row">
                                     <div class="col-sm-4">
+                                    <a href="#" class="main-link">
                                         <div class="m_server__box">
                                             <div class="m_server__img__box">
                                                 <img src="images/server_Icon1.png" alt=""/>
                                             </div>
                                             <span> Mailboxes</span>
-                                        </div>  
-                                        <a href="#" class="m-addbox">+ Add Mailbox</a>                                               
+                                        </div> 
+                                    </a> 
+                                        <a href="#" class="m-addbox btn default-btn">+ Add Mailbox</a>                                               
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="m_server__box">
@@ -964,16 +993,14 @@
 
     <!-- end::Body -->
     <!-- begin::Footer -->
-    <footer class="m-grid__item m-footer ">
-        <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+    <!-- <footer class="m-grid__item m-footer ">
+        <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container" style="height: auto !important">
             <div class="m-footer__wrapper">
                 <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
                     <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
                         <span class="m-footer__copyright">
                             2019 © WorldPosta
-                            <!--                                    <a href="https://keenthemes.com" class="m-link">
-                                                                    Keenthemes
-                                                                </a>-->
+                         
                         </span>
                     </div>
                     <div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
@@ -1016,7 +1043,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- end::Footer -->
 </div>
 <!-- end:: Page -->
