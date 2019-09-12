@@ -79,7 +79,7 @@ a:hover {
 /* ---- Login Page Style :: START ---- */
 .login_page {
     background: #fff;
-    background-image: url(../images/back_img.png);
+    /*background-image: url(../images/back_img.png);*/
 }
 
 .m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__logo {
@@ -275,7 +275,7 @@ a.create_link, a.create_link:hover {
 
 .login_page:after {
     content: '';
-    background-image: url('../images/login_right_back_img.png');
+    /*background-image: url('../images/login_right_back_img.png');*/
     background-repeat: no-repeat;
     position: absolute;
     height: 481px;
