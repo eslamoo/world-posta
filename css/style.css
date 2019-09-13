@@ -1122,7 +1122,7 @@ a.change_password{
     top: 15%;
 }
 header#m_header {
-    z-index: 11111;
+    z-index: 1000;
 }
 div#m_quicksearch{
     width: 21% !important;
