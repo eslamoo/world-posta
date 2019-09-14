@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+    <!-- begin::Head -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Mailbox</title>
+        <meta name="description" content="Latest updates and statistic charts">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--begin::Base Styles -->  
+        <!--begin::Page Vendors -->
+        <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Page Vendors -->
+        <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+        <!--        <link href="assets/demo/demo7/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
+        <link href="css/style.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css" type="text/css"/>
+        <link href="css/style_j.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style_r.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+    </head>
+    <!-- end::Head -->
+    <!-- end::Body -->
+    <body  class="m-page--wide m-header--fixed m-header--fixed-mobile m-footer--push m-aside--offcanvas-default"  >
+
+        <!-- begin:: Page -->
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+            <!-- begin::Header -->
+            <header id="m_header" class="m-grid__item	m-header "  m-minimize="minimize" m-minimize-offset="200" m-minimize-mobile-offset="200" >
+                <div class="m-header__top">
+                    <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                        <div class="m-stack m-stack--ver m-stack--desktop">
+                            <!-- begin::Brand -->
+                            <div class="m-stack__item m-brand">
+                                <div class="m-stack m-stack--ver m-stack--general m-stack--inline">
+                                    <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                                        <a href="index.html" class="m-brand__logo-wrapper">
+                                            <img src="images/header_logo.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="m-stack__item m-stack__item--middle m-brand__tools">
+                                        <!-- begin::Responsive Header Menu Toggler-->
+                                        <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
+                                            <span></span>
+                                        </a>
+                                        <!-- end::Responsive Header Menu Toggler-->
+                                        <!-- begin::Topbar Toggler-->
+                                        <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
+                                            <i class="flaticon-more"></i>
+                                        </a>
+                                        <!--end::Topbar Toggler-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- end::Brand -->		
+                            <!-- begin::Topbar -->
+                            <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+                                <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
+                                    <div class="m-stack__item m-topbar__nav-wrapper">
+                                        <ul class="m-topbar__nav m-nav m-nav--inline">
+                                            <li class="m-nav__item wp">
+                                                <a href="#" class="m-nav__link">
+                                                    <span class="m-nav__link-icon">
+                                                        <span class="m-nav__select_box">WP Mail</span></span></a>
+                                            </li>
+                                            <li class="m-nav__item wp">
+                                                <a href="#" class="m-nav__link"><span class="m-nav__link-icon">
+                                                        <span class="m-nav__select_box">WP Cloud Desktop</span></span></a>
+                                            </li>
+                                            <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1">
+                                                <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
+                                                    <!--                                                    <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>-->
+                                                    <span class="m-nav__link-icon">
+                                                        <span class="m-nav__link-icon-wrapper">
+                                                            <img src="images/notification_icon.png" alt=""/>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                                <div class="m-dropdown__wrapper">
+                                                    <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+                                                    <div class="m-dropdown__inner">
+                                                        <div class="m-dropdown__header m--align-center" style="background: url(assets/app/media/img/misc/notification_bg.jpg); background-size: cover;">
+                                                            <span class="m-dropdown__header-title">
+                                                                9 New
+                                                            </span>
+                                                            <span class="m-dropdown__header-subtitle">
+                                                                User Notifications
+                                                            </span>
+                                                        </div>
+                                                        <div class="m-dropdown__body">
+                                                            <div class="m-dropdown__content">
+                                                                <ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link active" data-toggle="tab" href="#topbar_notifications_notifications" role="tab">
+                                                                            Alerts
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#topbar_notifications_events" role="tab">
+                                                                            Events
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item m-tabs__item">
+                                                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#topbar_notifications_logs" role="tab">
+                                                                            Logs
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
+                                                                        <div class="m-scrollable" data-scrollable="true" data-max-height="250" data-mobile-max-height="200">
+                                                                            <div class="m-list-timeline m-list-timeline--skin-light">
+                                                                                <div class="m-list-timeline__items">
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge -m-list-timeline__badge--state-success"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            12 new users registered
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            Just now
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            System shutdown
+                                                                                            <span class="m-badge m-badge--success m-badge--wide">
+                                                                                                pending
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            14 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            New invoice received
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            20 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            DB overloaded 80%
+                                                                                            <span class="m-badge m-badge--info m-badge--wide">
+                                                                                                settled
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            1 hr
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            System error -
+                                                                                            <a href="#" class="m-link">
+                                                                                                Check
+                                                                                            </a>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            2 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item m-list-timeline__item--read">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                            <span class="m-badge m-badge--danger m-badge--wide">
+                                                                                                urgent
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            7 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item m-list-timeline__item--read">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            Production server down
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            3 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge"></span>
+                                                                                        <span class="m-list-timeline__text">
+                                                                                            Production server up
+                                                                                        </span>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            5 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                                                                        <div class="m-scrollable" data-scrollable="true" data-max-height="250" data-mobile-max-height="200">
+                                                                            <div class="m-list-timeline m-list-timeline--skin-light">
+                                                                                <div class="m-list-timeline__items">
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-success"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            Just now
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-danger"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New invoice received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            20 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-success"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            Production server up
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            5 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            New order received
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            7 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            System shutdown
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            11 mins
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="m-list-timeline__item">
+                                                                                        <span class="m-list-timeline__badge m-list-timeline__badge--state1-info"></span>
+                                                                                        <a href="" class="m-list-timeline__text">
+                                                                                            Production server down
+                                                                                        </a>
+                                                                                        <span class="m-list-timeline__time">
+                                                                                            3 hrs
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                                                                        <div class="m-stack m-stack--ver m-stack--general" style="min-height: 180px;">
+                                                                            <div class="m-stack__item m-stack__item--center m-stack__item--middle">
+                                                                                <span class="">
+                                                                                    All caught up!
+                                                                                    <br>
+                                                                                    No new logs.
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click">
+
+                                                <div class="kt-header__topbar-item kt-header__topbar-item--user">    
+                                                    <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,0px" aria-expanded="false">
+                                                        <div class="kt-header__topbar-user">
+                                                            <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
+                                                            <span class="kt-header__topbar-username kt-hidden-mobile">Sean</span>
+
+                                                            <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                                            <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1243px, 64px, 0px);">
+                                                        <!--begin: Head -->
+                                                        <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" style="background-image: url(./assets/media/misc/bg-1.jpg)">
+                                                            <div class="kt-user-card__avatar">
+                                                                <p>s</p>
+                                                                <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
+                                                                <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">Sean Stone</span>
+                                                            </div>                                                           
+
+                                                        </div>
+                                                        <!--end: Head -->
+
+                                                        <!--begin: Navigation -->
+                                                        <div class="kt-notification">
+                                                            <a href="#" class="kt-notification__item">                                                               
+                                                                <div class="kt-notification__item-details">
+                                                                    <div class="kt-notification__item-title kt-font-bold my_profile_one">
+                                                                        My Profile
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="kt-notification__item">                                                                
+                                                                <div class="kt-notification__item-details">
+                                                                    <div class="kt-notification__item-title kt-font-bold my_profile_two">
+                                                                        My Messages
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </a>
+
+
+
+                                                            <div class="kt-notification__custom kt-space-between">
+                                                                <a href="/metronic/preview/demo1/custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Log Out</a>
+                                                            </div>
+                                                        </div>
+                                                        <!--end: Navigation -->    </div>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end::Topbar -->
+                        </div>
+                    </div>
+                </div>
+                <div class="m-header__bottom">
+                    <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                        <div class="m-stack m-stack--ver m-stack--desktop">
+                            <!-- begin::Horizontal Menu -->
+                            <div class="m-stack__item m-stack__item--middle m-stack__item--fluid">
+                                <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn">
+                                    <i class="la la-close"></i>
+                                </button>
+                                <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light "  >
+                                    <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="index.html" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Dashboard
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    System
+                                                </span>
+                                            </a>
+                                        </li> 
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Organizations
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" aria-haspopup="true">
+                                            <a  href="javascript:;" class="m-menu__link m-menu__toggle">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Exchange
+                                                </span>
+                                                <i class="m-menu__hor-arrow la la-angle-down"></i>
+                                                <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                            </a>
+                                            <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">                                               
+                                                <ul class="m-menu__subnav">
+                                                    <li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
+                                                        <a  href="javascript:;" class="m-menu__link m-menu__toggle">
+                                                            <span class="m-menu__link-text">
+                                                                Mailboxes
+                                                            </span>
+                                                            <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                            <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                        </a>
+                                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
+
+                                                            <ul class="m-menu__subnav">
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-menu__item "  m-menu-link-redirect="1" aria-haspopup="true">
+                                                                    <a  href="inner.html" class="m-menu__link ">
+                                                                        <span class="m-menu__link-text">
+                                                                            Dummy Text
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Distribution List
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Contact List
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Bulk Module
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Task Running
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Exchange Logs
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-menu__item "  aria-haspopup="true">
+                                                        <a  href="#" class="m-menu__link ">
+                                                            <span class="m-menu__link-title">
+                                                                <span class="m-menu__link-wrap">
+                                                                    <span class="m-menu__link-text">
+                                                                        Mailbox Plans
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="m-menu__item "  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Migrations
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Payment
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item"  aria-haspopup="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__item-here"></span>
+                                                <span class="m-menu__link-text">
+                                                    Tickets
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end::Horizontal Menu -->	
+                            <!--begin::Search-->
+
+                            <!--end::Search-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end::Header -->		
+            <!-- begin::Body -->
+            <div class="m-grid__item main_content">
+                <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+
+                    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+                        <!-- BEGIN: Subheader -->                    
+
+                        <div class="m-subheader ">
+                            <div class="d-flex align-items-center">
+                                <div class="mr-auto">
+                                    <h3 class="m-subheader__title m-subheader__title--separator">
+                                        Edit Mailbox
+                                    </h3>
+                                    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                                        <li class="m-nav__item m-nav__item--home">
+                                            <a href="#" class="m-nav__link m-nav__link--icon">
+                                                <i class="m-nav__link-icon la la-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="m-nav__separator"></li>
+                                        <li class="m-nav__item">                                         
+                                            <span class="m-nav__link-text">
+                                                Edit Mailbox
+                                            </span>                                          
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch" m-quicksearch-mode="default">
+                                    <select class="form-control m-bootstrap-select m_selectpicker">
+                                        <option>
+                                            dir.com
+                                        </option>
+                                        <option>
+                                            dir.com
+                                        </option>
+                                        <option>
+                                            dir.com
+                                        </option>
+                                    </select>
+                                    <span class="m-pro_text">Pro Plan 200 GB</span>
+
+                                </div>
+                            </div>
+                            <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch_two" m-quicksearch-mode="default">
+                                <select class="form-control m-bootstrap-select m_selectpicker">
+                                    <option>
+                                        dir.com
+                                    </option>
+                                    <option>
+                                        dir.com
+                                    </option>
+                                    <option>
+                                        dir.com
+                                    </option>
+                                </select>
+                                <span class="m-pro_text">Pro Plan 200 GB</span>
+
+                            </div>
+                        </div>
+                        <!-- END: Subheader -->
+                        <div class="edit_mailbox_main">
+
+                            <div class="edit_mailbox_top">                                
+                                <div class="row">                                        
+                                    <div class="col-sm-2">
+                                        <div class="edit_left_top">
+                                            <h3>Edit Mailbox</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="edit_right_top">
+                                            <div class="product_tab">
+                                                <ul class="tabs">
+                                                    <li class="active" rel="tab1"><img src="images/general-info-icon.png" alt=""> General</li>
+                                                    <li rel="tab2" ><img src="images/setting.png" alt=""/> Setting</li>
+                                                    <li rel="tab3" ><img src="images/e-mail.png" alt=""/> E-mail Address</li>
+                                                    <li rel="tab4" ><img src="images/mail_flow.png" alt=""/> Mail Flow Setting</li>
+                                                    <li rel="tab5" ><img src="images/permission.png" alt=""/> Permission</li>
+                                                    <li rel="tab6" ><img src="images/mobile.png" alt=""/> Mobile Devices</li>
+                                                    <li rel="tab7" ><img src="images/member.png" alt=""/>Member of</li>
+                                                    <li rel="tab8" ><img src="images/member.png" alt=""/>Just for test</li>
+                                                </ul>                          
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product_tab tab_general mobile_main">
+                                <div class="tab_container"> 
+                                    <h3 class="d_active tab_drawer_heading" rel="tab1"><img src="images/general-info-icon.png" alt=""> General</h3>
+                                    <div class="tab_general_main tab_content active_content" id="tab1">
+
+                                        <div class="general_body">
+                                            <div class="accordion" id="accordionExampleone">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                <img src="images/general-info-icon.png" alt=""/>General Information                                                                
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExampleone">
+                                                        <div class="card-body">
+
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label for="display_name">Display Name</label><br>
+                                                                            <input name="display_name" type="text" class="form-control password_change" value="e2rq3 rewrety qeretry"><a href="#" class="change_password">Change Password</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>                                                                 
+                                                            <form>
+                                                                <h3><span>*</span> Required Fields</h3>
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="first_name">First Name <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter first name"  name="first_name" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="Initials">Initials <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter Initials" name="initials" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="last_name">Last Name <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter Last name" name="last_name" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="email">Email <span>*</span></label><br>
+                                                                            <input type="email" placeholder="Enter email" name="email" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="form-group">
+                                                                            <label for="description">Description <span>*</span></label><br>
+                                                                            <textarea rows="7" ></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="form-group checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>User must change password at next login</label>
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Disable User</label>
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Account is locked out</label>
+                                                                            <input type="submit" value="Submit" class="input_submit" name="submitfour">
+                                                                            <input type="reset" value="Cancel" class="input_reset" name="resetfour">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="general_body">
+                                            <div class="accordion" id="accordionExampletwo">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingtwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <img src="images/company_info.png" alt=""/> Company Information                                                 
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExampletwo">
+                                                        <div class="card-body">
+                                                            <form>
+
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="job_title">Job Title  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter job title" name="job_title" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="company">Company  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter company name" name="company" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="department ">Department  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter Department" name="department" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="office">Office  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter Office" name="office" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="manager">Manager Name   <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter Manager Name" name="manager_name" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <input type="submit" value="Lookup User" class="input_submit" name="Lookup User">
+                                                                <input type="reset" value="Clear Name" class="input_reset" name="Clear Name">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="general_body">
+                                            <div class="accordion" id="accordionExamplethree">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingthree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                                                                <img src="images/contact_info.png" alt=""/>   Contact Information                                        
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExamplethree">
+                                                        <div class="card-body">
+                                                            <form>
+
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="business_num">Business Phone  <span>*</span></label><br>
+                                                                            <input type="tel" placeholder="Enter business phone" name="business_phone" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="fax">Fax   <span>*</span></label><br>
+                                                                            <input type="tel" placeholder="Enter fax number" name="fax" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="home_phone ">Home Phone   <span>*</span></label><br>
+                                                                            <input type="tel" placeholder="Enter home phone number" name="home_phone" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="mobile_num">Mobile Phone  <span>*</span></label><br>
+                                                                            <input type="tel" placeholder="Enter mobile phone number" name="mobile_phone" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="pager">Pager   <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter pager" name="pager" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="web_page">Web page   <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter web page" name="web_page" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <input type="submit" value="Submit" class="input_submit" name="submitone">
+                                                                <input type="reset" value="Cancel" class="input_reset" name="resetone">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="general_body">
+                                            <div class="accordion" id="accordionExamplefour">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingfour">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                                                <img src="images/address.png" alt=""/>  Address       
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExamplefour">
+                                                        <div class="card-body">
+                                                            <form>
+
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="address">Address  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter address" name="address" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="city">City  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter city" name="city" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="state">State / Province  <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter state" name="state" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="zip">Zip / Postal Code   <span>*</span></label><br>
+                                                                            <input type="text" placeholder="Enter zip code" name="zip_code" required>
+                                                                        </div>                                                                        
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group">
+                                                                            <label for="manager">Country / Region   <span>*</span></label><br>
+                                                                            <select>
+                                                                                <option value="Select">Select</option>
+                                                                                <option value="ind">IND</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <input type="submit" value="Submit" class="input_submit" name="submittwo">
+                                                                <input type="reset" value="Cancel" class="input_reset" name="resettwo">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- #tab1 -->
+                                    <h3 class="tab_drawer_heading" rel="tab2"><img src="images/setting.png" alt=""/> Setting</h3>                                
+                                    <div id="tab2" class="tab_content">
+                                        <form>
+                                            <div class="setting_main">
+                                                <div class="setting_one">                                               
+
+                                                    <div class="row">
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Hide from Address Book</label>
+                                                        </div>
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Disable Mailbox</label>
+                                                        </div>
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Enable Archiving</label>
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label for="mail_box_plan">Mailbox Plan:</label>
+                                                            <p>Pro Plan 200 GB</p>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <label for="mailbox_size">Mailbox Sizes:</label>
+                                                            <p>0 of 1,024,000 MB</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label for="quota">Archiving Quota Viewer:</label>
+                                                            <p>0 of 0 MB</p>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label for="mail_box_plan">Exchange Guid:</label>
+                                                            <p>c6722f87-23b8-4afa-a34d-f2fbfb608c5a</p>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <input type="submit" value="Submit" class="submit" name="setting_submit">
+                                                    <input type="reset" value="Cancel" class="reset" name="setting_reset">
+                                                </div>  
+                                            </div>  
+                                        </form>
+                                    </div>  
+                                    <!-- #tab2 -->
+                                    <h3 class="tab_drawer_heading" rel="tab3"><img src="images/e-mail.png" alt=""/> E-mail Address</h3>
+
+                                    <div id="tab3" class="tab_content">  
+                                        <form>
+                                            <div class="email_address_main">
+                                                <div class="email_address_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label for="e-mail_address">E-mail Address <span>*</span></label><br>
+                                                            <input type="text" name="adminstrator" placeholder="Administrator" >@
+                                                            <select>
+                                                                <option value="Dir.com">Dir.com</option>
+                                                                <option value="Dir.net">Dir.net</option>
+                                                            </select>
+                                                            <a class="add_email" href="#" >Add Email Address</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="email_address_two">
+                                                <div class="row">
+                                                    <div class="col-sm-4 checkbox_user">
+                                                        <div class="email_one">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Email Address</label>
+                                                        </div>
+                                                        <div class="email_two">
+                                                            <label class="container_c" checked="checked"><input type="checkbox"><span class="checkmark"></span>erth@Dir.com</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </form>
+                                    </div>  
+                                    <h3 class=" tab_drawer_heading" rel="tab4"><img src="images/mail_flow.png" alt=""/> Mail Flow Setting</h3>
+                                    <div id="tab4" class="tab_content">
+                                        <form>
+                                            <div class="email_address_main">
+                                                <div class="mail_flow_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 checkbox_user">
+
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Enable Forwarding</label>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="mail_flow_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <label for="">Send On Behalf Grant this permission to<span>:</span></label>
+                                                            <div class="add_delete">
+                                                                <a href="#" class="mail_add">+ Add</a>
+                                                                <a href="#" class="delete">Delete</a>
+                                                            </div>
+                                                            <div class="mail_flow_two">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                        <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+
+                                                                    </div>
+                                                                    <div class="col-sm-1 checkbox_user">
+                                                                        <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="mail_flow_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 radio_btn">
+                                                            <label for="">Accept Messages From</label><br>
+                                                            <div class="all_sender">
+                                                                <label class="container_c"><input type="radio" name="radio"><span class="checkmark"></span>All senders</label>
+                                                            </div>
+                                                            <div class="only_sender">
+                                                                <label class="container_c"><input type="radio" name="radio"><span class="checkmark"></span>Only senders in the following list</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="mail_flow_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 radio_btn">
+                                                            <label for="">Reject Messages From</label><br>
+                                                            <div class="all_sender ">
+                                                                <label class="container_c"><input type="radio" name="radio1"><span class="checkmark"></span>No senders</label>
+                                                            </div>
+                                                            <div class="only_sender">
+                                                                <label class="container_c"><input type="radio" name="radio1"><span class="checkmark"></span>Senders in the following list</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="mail_flow_one">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <input type="submit" class="submit" name="fow_submit" value="Submit">
+                                                            <input type="reset" class="reset" name="fow_reset" value="Cancel">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div> 
+                                    <h3 class=" tab_drawer_heading" rel="tab5"><img src="images/permission.png" alt=""/> Permission</h3>
+                                    <div id="tab5" class="tab_content">
+                                        <form>
+                                            <div class="email_address_main">
+                                                <div class="permission_one">
+                                                    <div class="permission_two">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label for="full-access">Full Access</label>
+                                                                <div class="add_delete">
+                                                                    <a href="#" class="add_per" data-toggle="modal" data-target="#myModal">+ Add</a>
+                                                                    <a href="#" class="delete_per">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="permission_three">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="permission_main">
+                                                    <div class="permission_two">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label for="send_as">Send As</label>
+                                                                <div class="add_delete">
+                                                                    <a href="#" class="add_per" data-toggle="modal" data-target="#myModal">+ Add</a>
+                                                                    <a href="#" class="delete_per">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="permission_three">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="permission_main">
+                                                    <div class="permission_two">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label for="">Send on Behalf</label>
+                                                                <div class="add_delete">
+                                                                    <a href="#" class="add_per" data-toggle="modal" data-target="#myModal">+ Add</a>
+                                                                    <a href="#" class="delete_per">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="permission_three">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="permission_main">
+                                                    <div class="permission_two">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label for="">Calendar access</label>
+                                                                <div class="add_delete">
+                                                                    <a href="#" class="add_per">+ Add</a>
+                                                                    <a href="#" class="delete_per">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="permission_three">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name" data-toggle="modal" data-target="#myModal">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="permission_main">
+                                                    <div class="permission_two">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <label for="">Contact access</label>
+                                                                <div class="add_delete">
+                                                                    <a href="#" class="add_per" data-toggle="modal" data-target="#myModal">+ Add</a>
+                                                                    <a href="#" class="delete_per">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="permission_three">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="mail_flow_two">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <label for="name">Name:</label><span>etwryetut</span><br>
+                                                                            <label for="email">Email Address:</label><span>asdsd@Dir.com</span>
+                                                                        </div>
+                                                                        <div class="col-sm-2 checkbox_user">
+                                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email_address_main">
+                                                <div class="permission_main">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <input type="submit" class="submit" name="per_submit" value="Submit">
+                                                            <input type="reset" class="reset" name="per_reset" value="Cancel">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div> 
+                                    <h3 class=" tab_drawer_heading" rel="tab6"><img src="images/mobile.png" alt=""/> Mobile Devices</h3>
+                                    <div id="tab6" class="tab_content ">
+                                        <div class="profile_third_table ither_table">
+                                            <div class="portlet box">  
+                                                <div class="no_scrollbar_hr">
+                                                    <div class="portlet-body">
+                                                        <div class="table-responsive table-hover">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">User Agent </th>
+                                                                        <th scope="col">Lorem Ipsum </th>
+                                                                        <th scope="col">Last Sync Time </th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td> Matthew Harrison </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 10:05:02 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Don Haynes </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 12:25:03 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Stacey Diaz </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 10:05:02 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Jack Killinger </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 12:25:03 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Phyllis Owens </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 10:05:02 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> mma Spence </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 12:25:03 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Maria Freeman </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td>10:05:02 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Mary McMillin </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 12:25:03 </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> James Mosier </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td>10:05:02</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> mma Spencer </td>
+                                                                        <td> Lorem Ipsum </td>
+                                                                        <td> 12:25:03 </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profile_pagination">
+                                                <div class="dataTables_paginate paging_simple_numbers">
+                                                    <ul class="pagination">
+                                                        <li class="paginate_button page-item previous disabled">
+                                                            <a href="#" class="page-link">
+                                                                <img src="images/pagi_arrow_left.png" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="paginate_button page-item previous disabled">
+                                                            <a href="#" class="page-link">
+                                                                <i class="la la-angle-left"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="paginate_button page-item active ">
+                                                            <a href="#" class="page-link">1</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item ">
+                                                            <a href="#" class="page-link">2</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item ">
+                                                            <a href="#" class="page-link">3</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item ">
+                                                            <a href="#" class="page-link">4</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item ">
+                                                            <a href="#" class="page-link">5</a>
+                                                        </li>
+                                                        <li class="paginate_button page-item next">
+                                                            <a href="#" class="page-link">
+                                                                <i class="la la-angle-right"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="paginate_button page-item next">
+                                                            <a href="#" class="page-link">
+                                                                <img src="images/pagi_arrow.png" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <h3 class="tab_drawer_heading" rel="tab7"><img src="images/member.png" alt=""/> Member of</h3>
+                                    <div id="tab7" class="tab_content">
+                                        <div class="member_main">
+                                            <div class="profile_third_table no_spacing_table" >
+                                                <div class="portlet box">  
+                                                    <div class="no_scrollbar_hr_two">
+                                                        <div class="portlet-body">
+                                                            <div class="table-responsive table-hover">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col"> </th>
+                                                                            <th scope="col">Name </th>
+                                                                            <th scope="col">Email Address </th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> erth@Dir.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> brandy@armyspy.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label> </td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> PaulTDecker@jourra.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> Ellswor@rhyta.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><label class="container_c"><input type="checkbox" checked="checked"><span class="checkmark"></span></label> </td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> PaulTDecker@jourra.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> erth@Dir.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label> </td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td>JohnBDavis@dayrep.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label> </td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td> erth@Dir.com </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td> <label class="container_c"><input type="checkbox"><span class="checkmark"></span></label> </td>
+                                                                            <td> Lorem Ipsum </td>
+                                                                            <td>erth@Dir.com</td>
+                                                                        </tr>                                                                    
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile_pagination">
+                                                    <div class="dataTables_paginate paging_simple_numbers">
+                                                        <ul class="pagination">
+                                                            <li class="paginate_button page-item previous disabled">
+                                                                <a href="#" class="page-link">
+                                                                    <img src="images/pagi_arrow_left.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-item previous disabled">
+                                                                <a href="#" class="page-link">
+                                                                    <i class="la la-angle-left"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-item active ">
+                                                                <a href="#" class="page-link">1</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item ">
+                                                                <a href="#" class="page-link">2</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item ">
+                                                                <a href="#" class="page-link">3</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item ">
+                                                                <a href="#" class="page-link">4</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item ">
+                                                                <a href="#" class="page-link">5</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item next">
+                                                                <a href="#" class="page-link">
+                                                                    <i class="la la-angle-right"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-item next">
+                                                                <a href="#" class="page-link">
+                                                                    <img src="images/pagi_arrow.png" alt="">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <h3 class="tab_drawer_heading" rel="tab8"><img src="images/setting.png" alt=""/> Setting</h3>                                
+                                    <div id="tab8" class="tab_content">
+                                        <form>
+                                            <div class="setting_main">
+                                                <div class="setting_one">                                               
+
+                                                    <div class="row">
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Hide from Address Book</label>
+                                                        </div>
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Disable Mailbox</label>
+                                                        </div>
+                                                        <div class="col-sm-4 checkbox_user">
+                                                            <label class="container_c"><input type="checkbox"><span class="checkmark"></span>Enable Archiving</label>
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label for="mail_box_plan">Mailbox Plan:</label>
+                                                            <p>Pro Plan 200 GB</p>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <label for="mailbox_size">Mailbox Sizes:</label>
+                                                            <p>0 of 1,024,000 MB</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label for="quota">Archiving Quota Viewer:</label>
+                                                            <p>0 of 0 MB</p>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <label for="mail_box_plan">Exchange Guid:</label>
+                                                            <p>c6722f87-23b8-4afa-a34d-f2fbfb608c5a</p>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="setting_main">
+                                                <div class="setting_two">
+                                                    <input type="submit" value="Submit" class="submit" name="setting_submit">
+                                                    <input type="reset" value="Cancel" class="reset" name="setting_reset">
+                                                </div>  
+                                            </div>  
+                                        </form>
+                                    </div>  
+                                    <!-- #tab3 -->  
+                                    <!-- #tab4 --> 
+
+                                </div>
+                            </div>                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="side_notificatiion">
+                    <!-- side_notification start-->                      
+                    <button id="showRight" class="active"><img src="images/question.png" alt=""/></button>
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                        <button id="showRight1"><img src="images/close.png" alt=""/></button>
+
+                        <h3>Help</h3>
+                        <h2>Title</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <ul>
+                            <li><img src="images/server_Icon1.png" alt=""/></li>
+                            <li><img src="images/server_Icon1.png" alt=""/></li>
+                        </ul>
+                    </nav>
+                    <!-- side_notification finish-->
+                </div>
+            </div>
+            
+            <!-- end::Body -->
+            <!-- begin::Footer -->
+            <footer class="m-grid__item m-footer ">
+                <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
+                    <div class="m-footer__wrapper">
+                        <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+                            <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
+                                <span class="m-footer__copyright">
+                                    2019 © WorldPosta
+                                    <!--                                    <a href="https://keenthemes.com" class="m-link">
+                                                                            Keenthemes
+                                                                        </a>-->
+                                </span>
+                            </div>
+                            <div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
+                                <ul class="m-footer__nav m-nav m-nav--inline m--pull-right">
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                About
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#"  class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                Privacy
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                Terms & Conditions
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item">
+                                        <a href="#" class="m-nav__link">
+                                            <span class="m-nav__link-text">
+                                                Purchase
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="m-nav__item m-nav__item--last">
+                                        <a href="#" class="m-nav__link" data-toggle="m-tooltip" title="Support Center" data-placement="left">
+                                            <i class="m-nav__link-icon flaticon-info m--icon-font-size-lg3"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end::Footer -->
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="input_text" placeholder="search" >
+                        <div class="profile_third_table search_table " >
+                            <div class="portlet box">                                            
+                                <div class="portlet-body">
+                                    <div class="table-responsive table-hover mCustomScrollbar" data-mcs-theme="dark">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Display Name </th>
+                                                    <th scope="col">Login </th>
+                                                    <th scope="col"> </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> etwryetut </td>
+                                                    <td> asdsdf@Dir.com </td>
+                                                    <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td> etwryetut </td>
+                                                    <td> asdsdf@Dir.com </td>
+                                                    <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td> etwryetut </td>
+                                                    <td> asdsdf@Dir.com </td>
+                                                    <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td> etwryetut </td>
+                                                    <td> asdsdf@Dir.com </td>
+                                                    <td><label class="container_c"><input type="checkbox"><span class="checkmark"></span></label></td>                                                   
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="input_submit" name="per_submit" value="Add Member">
+                        <input type="reset" class="input_reset" name="per_reset" value="Cancel">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end:: Page -->
+        <!--begin::Base Scripts -->
+        <script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+        <script src="js/scripts.bundle.js" type="text/javascript"></script>
+        <script src="js/classic.js" type="text/javascript"></script>
+        <!--end::Base Scripts -->   
+        <!--begin::Page Vendors -->
+        <script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+        <!--end::Page Vendors -->  
+        <!--begin::Page Snippets -->
+        <script src="assets/app/js/dashboard.js" type="text/javascript"></script>         
+        <!--begin::Page Resources -->
+
+
+        <script src="js/bootstrap-select.js" type="text/javascript"></script>
+
+        <script src="js/custom.js" type="text/javascript"></script>
+        <script>
+            var menuRight = document.getElementById('cbp-spmenu-s2'),
+                    showRight = document.getElementById('showRight'),
+                    showRightPush = document.getElementById('showRightPush'),
+                    body = document.body;
+            showRight1 = document.getElementById('showRight1'),
+                    showRight.onclick = function () {
+                        classie.toggle(this, 'active');
+                        classie.toggle(menuRight, 'cbp-spmenu-open');
+
+                    };
+            showRight1.onclick = function () {
+                classie.toggle(this, 'active');
+                classie.toggle(menuRight, 'cbp-spmenu-open');
+
+            };
+
+        </script>
+    </body>
+    <!-- end::Body -->
+</html>
+

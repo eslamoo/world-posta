@@ -1445,6 +1445,7 @@ button.btn.dropdown-toggle.btn-light {
     border-bottom-right-radius: 4px;
     outline: 0;
     border-left: 0;
+    width: 260px;
     height: 32px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -1908,8 +1909,8 @@ nav#cbp-spmenu-s2 {
 
 @media (min-width: 1025px) {
     .m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper {
-        width: 380px;
-        margin-left: -235px;
+        width: 260px;
+        margin-left: -163px;
     }
 }
 
