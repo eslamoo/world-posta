@@ -130,7 +130,7 @@ a:hover {
 }
 
 .m-form .m-form__group .form-control-label, .m-form .m-form__group .col-form-label, .m-form .m-form__group > label {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
     margin: 24px 0 0;
@@ -191,13 +191,13 @@ a:hover {
         }
 
 .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
 }
 
 .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link, .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link:hover {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-Regular';
     font-size: 14px;
     border-bottom: 1px solid #b9b9bb;
@@ -232,7 +232,7 @@ a:hover {
 }
 
     .m-checkbox.m-checkbox--light > span:after {
-        border: solid #35353f;
+        border: solid black;
     }
 
 .m-radio > input:checked ~ span, .m-checkbox > input:checked ~ span {
@@ -252,7 +252,7 @@ a:hover {
 }
 
 a.create_link, a.create_link:hover {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-Regular';
     font-size: 14px;
     border-bottom: 1px solid #b9b9bb;
@@ -366,6 +366,8 @@ a.create_link, a.create_link:hover {
     /* background-color: #8cc63f; */
     /* padding-right: 23px; */
     border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
 
 }
 .m-header-menu .m-menu__nav>.m-menu__item{
@@ -442,7 +444,7 @@ a.create_link, a.create_link:hover {
 }
 
     .m-header-menu.m-header-menu--submenu-skin-light .m-menu__nav > .m-menu__item .m-menu__submenu > .m-menu__subnav > .m-menu__item > .m-menu__link .m-menu__link-text {
-        color: #35353f !important;
+        color: black !important;
         font-family: 'OpenSans-Regular';
         font-size: 12px;
     }
@@ -454,7 +456,7 @@ a.create_link, a.create_link:hover {
     }
 
     .m-header-menu.m-header-menu--submenu-skin-light .m-menu__nav > .m-menu__item .m-menu__submenu > .m-menu__subnav > .m-menu__item.m-menu__item--hover > .m-menu__link > .m-menu__hor-arrow, .m-header-menu.m-header-menu--submenu-skin-light .m-menu__nav > .m-menu__item .m-menu__submenu > .m-menu__subnav > .m-menu__item:hover > .m-menu__link > .m-menu__hor-arrow {
-        color: #35353f;
+        color: black;
     }
 
 .m-header-menu .m-menu__nav.m-menu__nav--submenu-arrow > .m-menu__item.m-menu__item--submenu > .m-menu__submenu .m-menu__submenu.m-menu__submenu--right > .m-menu__subnav {
@@ -513,7 +515,7 @@ a.create_link, a.create_link:hover {
 }
 
 .m-portlet .m-portlet__head .m-portlet__head-caption .m-portlet__head-title .m-portlet__head-text {
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
     letter-spacing: 0.7px;
     font-family: 'OpenSans-SemiBold';
@@ -536,15 +538,15 @@ a.create_link, a.create_link:hover {
 .m-widget11 .table thead tr > td {
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
-    color: #35353f;
+    color: black;
 }
 
 .m-widget11 .table tbody > tr > td {
     font-size: 14px;
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-Regular';
-    padding-top: 26px;
-    padding-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
 
 .m-widget11 .table tbody > tr:hover > td {
@@ -552,7 +554,7 @@ a.create_link, a.create_link:hover {
 }
 
 .m-widget11 .table tbody > tr > td a {
-    color: #35353f;
+    color: black;
 }
 
 .m-widget11 .table tbody > tr > td, .m-widget11 .table thead tr > td {
@@ -560,7 +562,7 @@ a.create_link, a.create_link:hover {
 }
 
 .m-portlet .m-portlet__body {
-    padding: 40px 0 20px;
+    padding: 10px 0 20px;
 }
 
 .m-portlet {
@@ -609,7 +611,7 @@ a.create_link, a.create_link:hover {
 
 .page-item.next .page-link, .page-item.previous .page-link {
     background: #ebe9f2 !important;
-    color: #35353f !important;
+    color: black !important;
 }
 
 .page-link {
@@ -618,7 +620,7 @@ a.create_link, a.create_link:hover {
     height: 30px;
     border: 0;
     background: #fff;
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-Regular';
     line-height: 30px;
     text-align: center;
@@ -687,7 +689,7 @@ li.paginate_button.page-item.previous a i {
 }
 
 .dataTables_length span {
-    color: #35353f;
+    color: black;
     font-size: 14px;
     font-family: 'OpenSans-Regular';
     display: inline-block;
@@ -697,7 +699,7 @@ li.paginate_button.page-item.previous a i {
 .dataTables_length select.form-control {
     background-color: #ebe9f2;
     height: 31px !important;
-    color: #35353f;
+    color: black;
     font-size: 14px;
     font-family: 'OpenSans-Regular';
     border: 0 !important;
@@ -817,7 +819,7 @@ li.paginate_button.page-item.previous a i {
     height: 38px;
     margin: 0;
     background-color: #e4e7ed;
-    color: #35353f;
+    color: black;
     font-size: 16px;
     font-family: 'OpenSans-SemiBold';
     border: 1px solid #d3d7df;
@@ -937,7 +939,7 @@ li.paginate_button.page-item.previous a i {
     }
 
 .m-portlet .m-portlet__foot.m-portlet__foot--fit .login_text {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
     margin-top: 10px;
@@ -953,7 +955,7 @@ li.paginate_button.page-item.previous a i {
 
 .m-portlet .m-portlet__foot.m-portlet__foot--fit .cancel_btn {
     padding: 8px 19px;
-    color: #35353f !important;
+    color: black !important;
 }
 
 .m-portlet .m-portlet__foot.m-portlet__foot--fit a.green_btn {
@@ -976,7 +978,7 @@ li.paginate_button.page-item.previous a i {
 
 a.m-btn.m-btn--custom.m-btn--icon.input_reset {
     padding: 8px 15px;
-    color: #35353f !important;
+    color: black !important;
 }
 
 .m-wizard__step.m-wizard__step--done a.m-wizard__step-number span:before {
@@ -1028,7 +1030,7 @@ a.m-btn.m-btn--custom.m-btn--icon.input_reset {
 }
 
 .m-widget24 .m-widget24__item .m-widget24__title {
-    color: #35353f;
+    color: black;
     font-family: 'OpenSans-Bold';
     font-size: 17px;
     margin-left: 1.4rem;
@@ -1146,7 +1148,7 @@ a.main-link {
 }
 
 .m-addbox {
-    color: #35353f !important;
+    color: black !important;
     font-family: 'OpenSans-Regular';
     font-size: 16px;
     display: table;
@@ -1166,21 +1168,31 @@ a.main-link {
 }
 
 .general_body button.btn.btn-link.collapsed {
-    color: #35353f;
+    color: black;
+    width: 100%;
+    text-align: left;
     text-decoration: none;
     font-family: 'OpenSans-SemiBold';
 }
 
 .general_body button.btn.btn-link {
-    font-family: 'OpenSans-SemiBold';
+    font-family: 'OpenSans-SemiBold'; 
+    width: 100%;
+    text-align: left;
 }
-
+.general_body {
+    padding-bottom: 10px!important;
+}
+.general_body .card-header{
+    padding: 10px 1.25rem !important;
+    box-shadow: 1px 3px 7px 0px rgba(18, 18, 19, 0.2);
+}
 a.change_password {
     font-family: 'OpenSans-Regular';
 }
 
 .checkbox_user {
-    color: #35353f;
+    color: black;
     text-decoration: none;
     font-family: 'OpenSans-SemiBold';
 }
@@ -1198,7 +1210,7 @@ a.change_password {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #35353f;
+    color: black;
 }
 
     /* Hide the browser's default checkbox */
@@ -1454,7 +1466,97 @@ button.btn.dropdown-toggle.btn-light {
 .m-topbar .m-topbar__nav.m-nav > .m-nav__item > .m-nav__link {
     /* margin: 0 10px; */
 }
+/* Edit Mailbox */
+.m-portlet.m-portlet--tabs .m-portlet__head .m-portlet__head-tools .m-tabs-line .m-tabs__link{
+    padding: 11px 0 11px 0 !important;
+    font-size: 12px;
+}
+.m-portlet .m-portlet__head{
+    height: 3.4rem !important;
+}
+.m-tabs-line a.m-tabs__link.active, .m-tabs-line a.m-tabs__link:hover, .m-tabs-line.nav.nav-tabs .nav-link.active, .m-tabs-line.nav.nav-tabs .nav-link:hover{
+    color: #8cc63f !important;
+    border-bottom: 1px solid #8cc63f !important;
+}
+#Address .row{
+    border-bottom: 1px solid #eff1f5;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 10px;
+}
+#Setting .row
+{
+    border-bottom: 1px solid #eff1f5;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#Setting  p {
+    display: inline-block;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    color: #5e6073;
+    margin: 0;
+}
 
+#Setting label {
+    display: inline-block;
+    font-family: 'OpenSans-SemiBold';
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+.email_one {
+    
+    border-bottom: 1px dotted #ebeaf3;
+}
+.email_two {
+    padding-top: 20px;
+}
+#Address .att{
+    padding-top: 27px;
+    font-size: 21px;
+}
+#Address row{
+    padding: 0
+}
+#Flow:first-child .row{
+    padding-top: 0
+}
+#Flow .row{
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #eff1f5;
+}
+#Flow .row label {
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    color: black;
+    margin-top: 6px;
+}
+#Flow .flow-box  label {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 14px;
+    color: black;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+#Flow .flow-box{
+    margin-top: 30px;
+    border: 1px solid #d3d7df;
+    padding: 20px;
+    border-radius: 4px;
+}
+#Setting .btn{
+    margin-right: 10px;
+}
+.btn.btn-default{
+    color: #888;
+}
+/* End Edit Mailbox */
 .search-icon--input {
     border: 1px solid rgba(255, 255, 255, 0.54);
     border-right: 0;
@@ -1536,7 +1638,7 @@ button.btn.dropdown-toggle.btn-light {
 .m-header-search__form .dataTables_length select.form-control {
     background-color: #f4f5f8;
     height: 31px !important;
-    color: #35353f;
+    color: black;
     font-size: 14px;
     font-family: 'OpenSans-Regular';
     border: 0 !important;
@@ -1855,7 +1957,7 @@ button#showRight {
 }
 
 table th, table td, a, button, select, select > option, li, .btn {
-    font-family: 'OpenSans-SemiBold' !important;
+    font-family: 'OpenSans-Regular' !important;
 }
 
     button#showRight1 {
@@ -1927,3 +2029,12 @@ nav#cbp-spmenu-s2 {
     display: inline-block;
     margin-top: -11px;
 }
+.m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head form{
+    position: relative;
+    top: 12px
+}
+.m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head {
+    padding: 14px 14rem 0 14rem;
+}
+
+

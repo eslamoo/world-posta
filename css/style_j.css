@@ -366,7 +366,7 @@ input.input_text:disabled {
 .profile_third_table .table thead th {
     vertical-align: bottom;
     border-bottom: 1px solid #eff1f5;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 14px;
     font-family: 'OpenSans-SemiBold';
     color: #1d1d20;
