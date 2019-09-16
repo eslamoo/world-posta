@@ -1420,6 +1420,10 @@ button.btn.dropdown-toggle.btn-light {
     color: rgba(255, 255, 255, 0.54) !important;
 }
 
+.ui-autocomplete .ui-autocomplete-panel {
+    min-width: 109% !important;
+}
+
 .ui-autocomplete-list-item,
 .ui-autocomplete-panel,
 .ui-autocomplete-panel ul li {
