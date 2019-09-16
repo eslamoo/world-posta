@@ -1549,9 +1549,9 @@ button.btn.dropdown-toggle.btn-light {
     margin-right: 10px;
 }
 #Flow .flow-box{
-    margin-top: 30px;
+    margin-top: 10px;
     border: 1px solid #d3d7df;
-    padding: 20px;
+    padding: 5px;
     border-radius: 4px;
 }
 #Setting .btn{
