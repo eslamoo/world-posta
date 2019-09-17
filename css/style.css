@@ -1430,8 +1430,8 @@ button.btn.dropdown-toggle.btn-light {
     overflow-x: hidden;
 }
 
-.ui-autocomplete-loader.pi.pi-spinner.pi-spin.ng-tns-c5-0.ng-star-inserted,
-.ui-autocomplete-loader.pi.pi-spinner.pi-spin.ng-tns-c5-0.ng-star-inserted > * {
+.ui-autocomplete-loader.pi.pi-spinner.pi-spin,
+.ui-autocomplete-loader.pi.pi-spinner.pi-spin > * {
     color: #7fab45 !important;
 }
 
