@@ -1420,10 +1420,6 @@ button.btn.dropdown-toggle.btn-light {
     color: rgba(255, 255, 255, 0.54) !important;
 }
 
-.ui-autocomplete .ui-autocomplete-panel {
-    min-width: 109% !important;
-}
-
 .ui-autocomplete-list-item,
 .ui-autocomplete-panel,
 .ui-autocomplete-panel ul li {
@@ -1452,7 +1448,9 @@ button.btn.dropdown-toggle.btn-light {
     left: -23px !important;
     max-width: 194px !important;
 }
-
+.ui-autocomplete .ui-autocomplete-panel {
+  min-width: 109% !important;
+}
 #search-input {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.54);
@@ -1541,18 +1539,18 @@ button.btn.dropdown-toggle.btn-light {
     color: black;
     margin-top: 6px;
 }
-#Flow .flow-box  label {
+.flow-box  label {
     font-family: 'OpenSans-SemiBold';
     font-size: 14px;
     color: black;
     margin-top: 6px;
     margin-right: 10px;
 }
-#Flow .flow-box{
-    margin-top: 10px;
-    border: 1px solid #d3d7df;
-    padding: 5px;
-    border-radius: 4px;
+.flow-box {
+  margin-top: 10px;
+  border: 1px solid #d3d7df;
+  padding: 5px;
+  border-radius: 4px;
 }
 #Setting .btn{
     margin-right: 10px;
@@ -2038,7 +2036,7 @@ nav#cbp-spmenu-s2 {
     top: 12px
 }
 .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head {
-    padding: 14px 14rem 0 14rem;
+    padding: 0px 10rem 0 10rem;
 }
 
 
