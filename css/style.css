@@ -287,7 +287,7 @@ a.create_link, a.create_link:hover {
 
 /* ---- Mail Page Style :: START ---- */
 .m-stack__item.m-stack__item--middle.m-brand__logo, .m-brand {
-    background: transparent;
+    background: #3a3a3c;
 }
 
 .m-header .m-header__top {
@@ -1466,6 +1466,16 @@ button.btn.dropdown-toggle.btn-light {
 .m-topbar .m-topbar__nav.m-nav > .m-nav__item > .m-nav__link {
     /* margin: 0 10px; */
 }
+.footr{
+    background: #fff;
+    height: 69px;
+    min-height: 69px;
+}
+.footr span, .footr li a span{ 
+    font-size: 14px;
+    color: #595d69;
+    font-family: 'OpenSans-Regular';
+}
 /* Edit Mailbox */
 .m-portlet.m-portlet--tabs .m-portlet__head .m-portlet__head-tools .m-tabs-line .m-tabs__link{
     padding: 11px 0 11px 0 !important;
@@ -1531,6 +1541,7 @@ button.btn.dropdown-toggle.btn-light {
     padding-top: 10px;
     border-bottom: 1px solid #eff1f5;
 }
+
 #Flow .row label {
     font-family: 'OpenSans-Regular';
     font-size: 14px;
@@ -1574,14 +1585,14 @@ button.btn.dropdown-toggle.btn-light {
     }
 
     .margin-items-mobile {
-        margin-top: 46px;
+        /* margin-top: 46px; */
         margin-bottom: -46px;
         visibility: hidden;
     }
 
-    .m-topbar__nav.m-nav.m-nav--inline {
+    /* .m-topbar__nav.m-nav.m-nav--inline {
         margin-top: -44px !important;
-    }
+    } */
 
     .m-subheader {
         padding-top: 106px !important;
