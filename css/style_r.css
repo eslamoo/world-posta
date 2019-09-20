@@ -162,16 +162,16 @@
     margin-left: 20px;
     color: black;
 }
-.general_body .card-body h3{
-    font-size: 14px;
-    text-align: right;
-    margin-bottom: 10px;
+.m-accordion__item-content h3 {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
 }
-.general_body .card-body h3 span{
+  .m-accordion__item-content h3 span {
     color: #ff2626;
-}
-.general_body .card-body form label span{
-    color: #ff2626;
+  }
+.m-accordion__item-content form label span {
+  color: #ff2626;
 }
 
 .general_body .submit{
@@ -488,7 +488,7 @@
 .email_address_main .permission_one{
     padding-left: 27px;
     padding-right: 27px;
-    padding-bottom:30px;   
+    padding-bottom:7px;   
 }
 .email_address_main  .permission_two label{
     font-family: 'OpenSans-SemiBold';
@@ -501,8 +501,7 @@
     float: right;
 }
 .email_address_main  .permission_two{
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eff1f5;
+    padding: 5px;
 }
 .email_address_main  .permission_two .add_per{
     padding: 10px 20px;
