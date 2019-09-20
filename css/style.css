@@ -2081,7 +2081,7 @@ body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb {
 }
 /*Footer*/
 .m-page {
-  min-height: calc(100vh - 30px);
+  /* min-height: calc(100vh - 30px); */
 }
 .footr {
 
