@@ -10,7 +10,75 @@
     .m-wizard.m-wizard--2 .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step:after{left: 1px;}
     .m-wizard.m-wizard--2 .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step:before{left: 2px;}
 }
+@media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+    
+    .m-dropdown.m-dropdown--mobile-full-width>.m-dropdown__wrapper.for-mobile{
+        width: 170px !important
+    }
+    .m-dropdown__wrapper.for-mobile .m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust{
+        left: 113.141px !important;
+    }
+    .m-portlet.m-portlet--tabs .m-portlet__head{
+        display: inline-table !important;
+    }
+    .general_body .password_change {
+        width: 100%
+    }
+    #Address .att{
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+    #Flow .pull-right{
+        float: none;
+    }
+    #Flow .flow-box .checkbox_user{
+        left: 84%;
+        top: -49px;
+    }
+    #Permission .mail_flow_two .checkbox_user{
+        left: 84%;
+        top: -49px;
+    }
+    .dataTables_paginate .page-link,.profile_third_table .page-link{
+        width: 25px;
+    }
+    #Permission .email_address_main .permission_one{
+        padding: 0 !important;
+    }
+    #Permission .mail_flow_two{
+        padding: 14px;
+    }
+    #Permission .email_address_main .permission_main{
+        padding: 0;
+    }
+    .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head{
+        padding: 0 20px !important;
+    }
+    .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head .m-radio-inline .m-radio{
+        margin-right: 0;
+        padding-left: 27px;
+    }
 
+    .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head .users-input {
+        float: none;
+    }
+    .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head form{
+        float: none;
+        top: 0;
+    }
+    .m-subheader select{
+        width: 100%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+      display: none !important;
+    }
+  }
 @media (max-width: 1199px){
     .main_content {padding-bottom: 40px;}
     .m-header-menu .m-menu__nav>.m-menu__item {padding: 0 11px;}

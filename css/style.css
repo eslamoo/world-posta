@@ -743,9 +743,9 @@ li.paginate_button.page-item.previous a i {
   padding: 0;
   color: #7fab45;
 }
-.btn{
+/* .btn{
   margin:0 2px 0 2px !important;
-}
+} */
 
 
   .m-widget11 .table tbody > tr > td a.delete_btn {
@@ -914,7 +914,19 @@ li.paginate_button.page-item.previous a i {
     display: table-cell;
     vertical-align: bottom;
   }
-
+  .m-topbar__user-profile .m-nav--skin-light .profile-item .m-nav__link-icon{
+    padding-right: 5px;
+  }
+  .m-topbar__user-profile .m-nav--skin-light .profile-item {
+    margin-bottom: 10px
+}
+.m-topbar__user-profile .m-nav--skin-light .profile-item a{
+    color: #888;
+    font-size: 15px;
+}
+.btn.m-btn--label-brand {
+    color: #81b43e;
+}
   .profile_form_main.m-form__section .table_text {
     display: table;
     height: 100%;
@@ -1534,11 +1546,11 @@ button.btn.dropdown-toggle.btn-light {
 }
 
 #Flow .row {
-  padding-left: 27px;
+  /* padding-left: 27px;
   padding-right: 27px;
   padding-bottom: 10px;
   padding-top: 10px;
-  border-bottom: 1px solid #eff1f5;
+  border-bottom: 1px solid #eff1f5; */
 }
 
   #Flow .row label {
@@ -2051,7 +2063,7 @@ nav#cbp-spmenu-s2 {
 }
 
 .m-invoice__footer .m-portlet.m-portlet--tabs .m-portlet__head {
-  padding: 0px 10rem 0 10rem;
+  padding: 0px 15rem 0 15rem;
 }
 
 
