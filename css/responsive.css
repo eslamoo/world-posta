@@ -1,7 +1,7 @@
 @media (max-width: 1420px){
     .login_page:after{height: 451px;background-size: cover;width: 391px;top: auto; bottom: 0;}
     .m-login.m-login--2.m-login--signin .m-login__signin{position: relative;z-index: 1;}
-
+    
 }
 @media (max-width: 1200px){
     .m-wizard.m-wizard--2 {  margin-top: 0;}
