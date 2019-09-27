@@ -689,9 +689,9 @@ span.not_verified {
     .m-header--fixed-mobile .m-header{
         position: relative;
     }
-    .m-header {
+    /* .m-header {
         height: auto !important;
-    }
+    } */
     .m-grid__item.main_content {
         padding-top: 0 !important;
     }
@@ -798,9 +798,9 @@ span.not_verified {
     .m-widget1 .m-widget1__item {
         padding: 15px;
     }
-    .m-portlet .m-portlet__head .m-portlet__head-caption .m-portlet__head-title {
+    /* .m-portlet .m-portlet__head .m-portlet__head-caption .m-portlet__head-title {
         padding-top: 22px;
-    }
+    } */
 
 }
 
