@@ -12,14 +12,15 @@
         <!--begin::Page Vendors -->
         <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
         <!--end::Page Vendors -->
-        <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-        <!--        <link href="assets/demo/demo7/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
+        <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" media="all" />
+<!--        
         <link href="style.bundle.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css" type="text/css"/>
         <link href="css/style_j.css" rel="stylesheet" type="text/css"/>
         <link href="css/style_r.css" rel="stylesheet" type="text/css"/>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/> -->
         <!-- <link href="css/responsive.css" rel="stylesheet" type="text/css"/> -->
+        <link rel="stylesheet" href="./css/vendor.bundle.min.css" media="all">
         <link rel="shortcut icon" href="images/favicon.ico" />
     </head>
     <!-- end::Head -->
@@ -464,56 +465,43 @@
 
                         <div class="m-subheader ">
                             <div class="d-flex align-items-center">
-                                <div class="mr-auto">
-                                    <h3 class="m-subheader__title m-subheader__title--separator">
-                                        Edit Mailbox
-                                    </h3>
-                                    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
-                                        <li class="m-nav__item m-nav__item--home">
-                                            <a href="#" class="m-nav__link m-nav__link--icon">
-                                                <i class="m-nav__link-icon la la-home"></i>
-                                            </a>
-                                        </li>
-                                        <li class="m-nav__separator"></li>
-                                        <li class="m-nav__item">                                         
-                                            <span class="m-nav__link-text">
-                                                Edit Mailbox
-                                            </span>                                          
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch" m-quicksearch-mode="default">
-                                    <select class="form-control m-bootstrap-select m_selectpicker">
-                                        <option>
-                                            dir.com
-                                        </option>
-                                        <option>
-                                            dir.com
-                                        </option>
-                                        <option>
-                                            dir.com
-                                        </option>
-                                    </select>
-                                    <span class="m-pro_text">Pro Plan 200 GB</span>
-
+                                <div class="mx-auto row">
+                                    <div class="mr-auto col-md-6 col-xs-12">
+                                        <h3 class="m-subheader__title m-subheader__title--separator">
+                                            Mailboxes
+                                        </h3>
+                                        <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                                            <li class="m-nav__item m-nav__item--home">
+                                                <a href="#" class="m-nav__link m-nav__link--icon">
+                                                    <i class="m-nav__link-icon la la-home"></i>
+                                                </a>
+                                            </li>
+                                            <li class="m-nav__separator"></li>
+                                            <li class="m-nav__item">
+                                                <span class="m-nav__link-text">
+                                                    Mailboxes
+                                                </span>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <select class="form-control pckg_select pull-right ng-pristine ng-valid ng-touched">
+                                            <!---->
+                                            <option value="1170" class="ng-star-inserted">Enterprise Plan 1TB</option>
+                                        </select>
+                                        <select class="form-control pckg_select pull-right ng-pristine ng-valid ng-touched">
+                                            <!---->
+                                            <option value="1170" class="ng-star-inserted">Enterprise Plan 1TB</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch_two" m-quicksearch-mode="default">
-                                <select class="form-control m-bootstrap-select m_selectpicker">
-                                    <option>
-                                        dir.com
-                                    </option>
-                                    <option>
-                                        dir.com
-                                    </option>
-                                    <option>
-                                        dir.com
-                                    </option>
-                                </select>
-                                <span class="m-pro_text">Pro Plan 200 GB</span>
-
-                            </div>
+    
+                            <!-- <a href="" class="btn default-btn">Submit</a>
+                                <button class="btn default-btn">Submit</button>
+                                <input type="submit" class="btn default-btn" value="Submit">
+                                <a class="green_btn ng-star-inserted" href="/exchange/add-mailbox"><span><i class="la la-plus"></i><span>Add Mailbox</span></span></a>  -->
                         </div>
                         <!-- END: Subheader -->
                         <div class="edit_mailbox_main">

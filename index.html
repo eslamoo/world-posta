@@ -9,19 +9,138 @@
     <meta name="description" content="Latest updates and statistic charts">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--begin::Base Styles -->
-    <!--begin::Page Vendors -->
-    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-    <!--end::Page Vendors -->
-    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-    <!--        <link href="assets/demo/demo7/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
-    <link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="css/style_j.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/style_r.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/vendor.bundle.min.css" media="all">  
+    
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--end::Base Styles -->
+    <style>
+    /** The Magic **/
+.btn-breadcrumb .btn:not(:last-child):after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    left: 100%;
+    z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid rgb(173, 173, 173);
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 3;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn {
+  padding:6px 12px 6px 24px;
+}
+.btn-breadcrumb .btn:first-child {
+  padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid #fff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #ebebeb;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #adadad;
+}
+
+/** Primary button **/
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+  border-left: 10px solid #428bca;
+}
+.btn-breadcrumb .btn.btn-primary:not(:last-child):before {
+  border-left: 10px solid #357ebd;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+  border-left: 10px solid #3276b1;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):before {
+  border-left: 10px solid #285e8e;
+}
+
+/** Success button **/
+.btn-breadcrumb .btn.btn-success:not(:last-child):after {
+  border-left: 10px solid #5cb85c;
+}
+.btn-breadcrumb .btn.btn-success:not(:last-child):before {
+  border-left: 10px solid #4cae4c;
+}
+.btn-breadcrumb .btn.btn-success:hover:not(:last-child):after {
+  border-left: 10px solid #47a447;
+}
+.btn-breadcrumb .btn.btn-success:hover:not(:last-child):before {
+  border-left: 10px solid #398439;
+}
+
+/** Danger button **/
+.btn-breadcrumb .btn.btn-danger:not(:last-child):after {
+  border-left: 10px solid #d9534f;
+}
+.btn-breadcrumb .btn.btn-danger:not(:last-child):before {
+  border-left: 10px solid #d43f3a;
+}
+.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):after {
+  border-left: 10px solid #d2322d;
+}
+.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):before {
+  border-left: 10px solid #ac2925;
+}
+
+/** Warning button **/
+.btn-breadcrumb .btn.btn-warning:not(:last-child):after {
+  border-left: 10px solid #f0ad4e;
+}
+.btn-breadcrumb .btn.btn-warning:not(:last-child):before {
+  border-left: 10px solid #eea236;
+}
+.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):after {
+  border-left: 10px solid #ed9c28;
+}
+.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):before {
+  border-left: 10px solid #d58512;
+}
+
+/** Info button **/
+.btn-breadcrumb .btn.btn-info:not(:last-child):after {
+  border-left: 10px solid #5bc0de;
+}
+.btn-breadcrumb .btn.btn-info:not(:last-child):before {
+  border-left: 10px solid #46b8da;
+}
+.btn-breadcrumb .btn.btn-info:hover:not(:last-child):after {
+  border-left: 10px solid #39b3d7;
+}
+.btn-breadcrumb .btn.btn-info:hover:not(:last-child):before {
+  border-left: 10px solid #269abc;
+}
+    </style>
 </head>
 <!-- end::Head -->
 <!-- end::Body -->
@@ -29,8 +148,7 @@
     <!-- begin:: Page -->
     <div class="m-grid m-grid--hor m-grid--root m-page">
         <!-- begin::Header -->
-        <header id="m_header" class="m-grid__item	m-header " m-minimize="minimize" m-minimize-offset="200" m-minimize-mobile-offset="200">
-
+        <header id="m_header" class="m-grid__item m-header " m-minimize="minimize" m-minimize-offset="200" m-minimize-mobile-offset="200">
             <div class="m-header__top">
                 <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
                     <div class="m-stack m-stack--ver m-stack--desktop">
@@ -40,17 +158,11 @@
                             <div class="m-stack m-stack--ver m-stack--general m-stack--inline">
                                 <div class="m-stack__item m-stack__item--middle m-brand__logo">
                                     <a href="index.html" class="m-brand__logo-wrapper">
-                                        <img alt="" src="images/header_logo.png">
+                                        <img alt="" src="images/header_logo.png" />
                                     </a>
                                 </div>
                                 <div class="m-stack__item m-stack__item--middle m-brand__tools">
-							
-
-                                    <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--lef m--visible-tablet-and-mobile-inline-bloc counter-mobile hidden-lg hidden-md">
-										<i class="la la-clock-o la-spin"></i> 20 Days
-									</a>
-                                    <!-- <div class="m-brand__toggler m-brand__icon">   <i class="fa fa-clock-o fa-spin fa-3x" style="color: #dc3232!important"></i> 20 Days</div> -->
-                                    <!-- END -->
+                                
 
                                     <!-- begin::Responsive Header Menu Toggler-->
                                     <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
@@ -61,64 +173,39 @@
 
                                     <!-- begin::Topbar Toggler-->
                                     <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
-                                        <i class="la la-search" style="font-size: 21px;
-                                        position: relative;
-                                        top: 2px;" ></i>
+                                        <i class="la la-ellipsis-v fa-2x" style="position: relative;top: 1px;"></i>
                                     </a>
 
                                     <!--end::Topbar Toggler-->
                                 </div>
                             </div>
-
                         </div>
 
                         <!-- end::Brand -->
+
                         <!-- begin::Topbar -->
                         <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
                             <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
                                 <div class="m-stack__item m-topbar__nav-wrapper">
                                     <ul class="m-topbar__nav m-nav m-nav--inline">
-                                        <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img margin-items-mobile counter-desktop" m-dropdown-toggle="click" aria-expanded="true" " >
-                                            <a href="#" class="m-nav__link m-dropdown__toggle wp-link" style="cursor:text;margin-right: 21px;">
-                                                <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
-                                                <span class="m-nav__link-icon">
-                                                    <span class="m-nav__link-icon-wrapper">
-                                                        <i class="fa fa-clock-o fa-spin fa-3x" style="color: #dc3232!important"></i>
-                                                    </span>
-                                                </span>
-                                                <span class="m-topbar__wp-cloud" style="color: #dc3232!important"> 20 Days </span>
+                                        <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click"
+                                         m-dropdown-persistent="1">
+                                            <a href="#" class="m-nav__link m-dropdown__toggle " style="line-height: 63px;">
+                                                <i class="fa fa-clock-o fa-spin text-danger mr-1"></i>
+                                                <span class="m-topbar__welcome text-danger">20 Days</span>
                                             </a>
-
                                         </li>
-                                        <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img margin-items-mobile search-mobile">
-                                            <div class="search-block">
-                                                <p-autocomplete field="itemName" class="ng-tns-c3-0 ng-pristine ng-valid ng-touched">
-                                                    <span class="m-nav__link-icon search-icon--input">
-                                                        <span class="m-nav__link-icon-wrapper">
-                                                            <i class="fa fa-search icon-green"></i>
-                                                        </span>
-                                                    </span>
-                                                    <span class="ng-tns-c3-0 ui-autocomplete ui-widget">
-                                                        <input id="search-input" autocomplete="off" placeholder="Search.." class="ng-tns-c3-0 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted search-input" type="text">
-                                                    </span>
-                                                </p-autocomplete>
-
-                                            </div>
-
-                                        </li>
-
-
-                                        <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1" aria-expanded="true">
+                                        <li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click"
+                                         m-dropdown-persistent="1">
                                             <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
-                                                <!-- <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span> -->
+                                                <span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
                                                 <span class="m-nav__link-icon">
                                                     <span class="m-nav__link-icon-wrapper">
-                                                        <img src="images/notification.png" width="22" alt="" style="opacity: .7;"/>
-                                                        <!-- <img src="images/notification-green.png" width="22" /> -->
+                                                        <img src="images/notification.png" width="22" alt="" style="opacity: .7;">
                                                     </span>
                                                 </span>
                                             </a>
-                                            <div class="m-dropdown__wrapper" style="z-index: 102;">
+                                            <div class="m-dropdown__wrapper">
                                                 <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
                                                 <div class="m-dropdown__inner">
                                                     
@@ -127,49 +214,45 @@
                                                             <ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
                                                                 <li class="nav-item m-tabs__item">
                                                                     <a class="nav-link m-tabs__link active" data-toggle="tab" href="#topbar_notifications_notifications" role="tab">
-                                                                        Notifications
+                                                                        Notificaions
                                                                     </a>
                                                                 </li>
-
+                                                            
+                                                                
                                                             </ul>
                                                             <div class="tab-content">
                                                                 <div class="tab-pane active" id="topbar_notifications_notifications" role="tabpanel">
-                                                                    <div class="m-scrollable m-scroller ps ps--active-y" data-scrollable="true" data-height="250" data-mobile-height="200" style="height: 250px; overflow: hidden;">
-
-                                                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-                                                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;">
-
+                                                                    <div class="m-scrollable" data-scrollable="true" data-height="250" data-mobile-height="200">
+                                                                        <div class="m-list-timeline m-list-timeline--skin-light">
+                                                                            <div class="m-list-timeline__items">
+                                                                                
+                                                                                
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="ps__rail-y" style="top: 0px; right: 4px; height: 250px;">
-                                                                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 223px;"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
+                                                                
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </li>
-                                        <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click" aria-expanded="true">
-                                            <a href="#" class="m-nav__link m-dropdown__toggle qa-icon">
+                                        <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"
+                                         m-dropdown-toggle="click">
+                                            <a href="#" class="m-nav__link m-dropdown__toggle">
                                                 <span class="m-nav__link-badge m-badge m-badge--dot m-badge--info m--hide"></span>
                                                 <span class="m-nav__link-icon">
                                                     <span class="m-nav__link-icon-wrapper">
-                                                       
-                                                        <img src="./images/menu-white.png" width="17" alt="" style="    opacity: .7;">
-                                                        <!-- <img src="./images/menu-green.png" width="17" alt=""> -->
-                                                        
+                                                        <img src="./images/menu-white.png" width="17" style="opacity: .7;" alt="">
                                                     </span>
                                                 </span>
                                             </a>
-                                            <div class="m-dropdown__wrapper" style="z-index: 102;">
-                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 34.5px !important;"></span>
+                                            <div class="m-dropdown__wrapper">
+                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                                 <div class="m-dropdown__inner">
-                                                
+                                                    
                                                     <div class="m-dropdown__body m-dropdown__body--paddingless">
                                                         <div class="m-dropdown__content">
                                                             <div class="m-scrollable" data-scrollable="false" data-height="380" data-mobile-height="200">
@@ -201,55 +284,47 @@
                                                 </div>
                                             </div>
                                         </li>
-
-                                        <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click" aria-expanded="true">
+                                        <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light"
+                                         m-dropdown-toggle="click">
                                             <a href="#" class="m-nav__link m-dropdown__toggle">
-
-                                                <!-- <span class="m-topbar__username">Sara</span> -->
                                                 <span class="m-topbar__userpic">
-                                                    <img src="images/avatar.png" class="m--img-rounded m--marginless m--img-centered" alt="">
+                                                    <img src="images/avatar.png" width="40px" class="m--img-rounded m--marginless m--img-centered" alt="" />
                                                 </span>
+                                                
                                             </a>
-                                            <div class="m-dropdown__wrapper for-mobile" style="z-index: 102;">
-                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 48px;"></span>
+                                            <div class="m-dropdown__wrapper">
+                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                                                 <div class="m-dropdown__inner">
-                                                    <!-- <div class="m-dropdown__header m--align-center" style="background-color: #8cc63f;">
-                                                        <div class="m-card-user m-card-user--skin-dark">
-                                                            <div class="m-card-user__pic">
-                                                                <img src="images/avatar.png" class="m--img-rounded m--marginless" alt="">
-                                                            </div>
-                                                            <div class="m-card-user__details">
-                                                                <span class="m-card-user__name m--font-weight-500">Sara</span>
-                                                                <a href="" class="m-card-user__email m--font-weight-300 m-link">sara55@roaya.com</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
+                                                    
                                                     <div class="m-dropdown__body">
                                                         <div class="m-dropdown__content">
                                                             <ul class="m-nav m-nav--skin-light">
-                                                              
-                                                                <li class="profile-item">
+                                                                <li class="m-nav__section m--hide">
+                                                                    <span class="m-nav__section-text">Section</span>
+                                                                </li>
+                                                                <li class="m-nav__item">
                                                                     <a href="profile.html" class="m-nav__link">
                                                                         <i class="m-nav__link-icon fa fa-user"></i>
                                                                         <span class="m-nav__link-title">
                                                                             <span class="m-nav__link-wrap">
                                                                                 <span class="m-nav__link-text">My Profile</span>
-
+                                                                                <span class="m-nav__link-badge"><span class="m-badge m-badge--success">2</span></span>
                                                                             </span>
                                                                         </span>
                                                                     </a>
                                                                 </li>
-                                                                <li class="profile-item">
+                                                                <li class="m-nav__item">
                                                                     <a href="profile.html" class="m-nav__link">
-                                                                        <i class="m-nav__link-icon fa fa-money"></i>
-                                                                        <span class="m-nav__link-text">Billing</span>
+                                                                        <i class="m-nav__link-icon fa fa-file-o"></i>
+                                                                        <span class="m-nav__link-text">Bills</span>
                                                                     </a>
                                                                 </li>
-
+                                                                
                                                                 <li class="m-nav__separator m-nav__separator--fit">
                                                                 </li>
-
-
+                                                                
+                                                                <li class="m-nav__separator m-nav__separator--fit">
+                                                                </li>
                                                                 <li class="m-nav__item">
                                                                     <a href="snippets/pages/user/login-1.html" class="btn m-btn--pill btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">Logout</a>
                                                                 </li>
@@ -259,7 +334,7 @@
                                                 </div>
                                             </div>
                                         </li>
-
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -269,7 +344,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="m-header__bottom">
                 <div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
                     <div class="m-stack m-stack--ver m-stack--desktop">
@@ -279,225 +353,225 @@
                             <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
                             <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
                                 <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-                                    <li class="m-menu__item  m-menu__item--active " aria-haspopup="true">
-                                        <a href="index.html" class="m-menu__link ">
-                                            <span class="m-menu__item-here"></span><span class="m-menu__link-text">Dashboard</span>
-                                        </a>
-                                    </li>
-                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" aria-haspopup="true">
-                                        <a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link">
-                                            <span class="m-menu__item-here"></span><span class="m-menu__link-text">System</span>
-                                            <i class="m-menu__hor-arrow la la-angle-down"></i>
-                                            <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                        </a>
-                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-                                            <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                    <li class="m-menu__item  m-menu__item--active " aria-haspopup="true"><a href="index.html" class="m-menu__link "><span class="m-menu__item-here"></span><span class="m-menu__link-text">Dashboard</span></a></li>
+                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span class="m-menu__item-here"></span><span
+                                             class="m-menu__link-text">Actions</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
                                             <ul class="m-menu__subnav">
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-unlink"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Domains</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-list"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Audit Logs</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" aria-haspopup="true">
-                                        <a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link">
-                                            <span class="m-menu__item-here"></span><span class="m-menu__link-text">Email</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i>
-                                        </a>
-                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-                                            <span class="m-menu__arrow m-menu__arrow--adjust"></span>
-                                            <ul class="m-menu__subnav">
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-building-o"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Organizations</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-inbox"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Mailboxes</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item m-menu__item--submenu" m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><i class="m-menu__link-icon fa fa-bars"></i><span class="m-menu__link-text">With Sub-menu</span><i class="m-menu__hor-arrow la la-angle-right"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-diagram"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Generate
+                                                                    Reports</span> <span class="m-menu__link-badge"><span class="m-badge m-badge--success">2</span></span> </span></span></a></li>
+                                                <li class="m-menu__item  m-menu__item--submenu" m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><i class="m-menu__link-icon flaticon-business"></i><span
+                                                         class="m-menu__link-text">Manage Orders</span><i class="m-menu__hor-arrow la la-angle-right"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
                                                     <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right"><span class="m-menu__arrow "></span>
                                                         <ul class="m-menu__subnav">
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Latest Orders</span></a></li>
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Pending Orders</span></a></li>
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Processed Orders</span></a></li>
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Delivery Reports</span></a></li>
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Payments</span></a></li>
-                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__link-text">Customers</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Latest Orders</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Pending Orders</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Processed Orders</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Delivery Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Payments</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Customers</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-list-alt"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text"> Distribution List </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
+                                                <li class="m-menu__item  m-menu__item--submenu" m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><i class="m-menu__link-icon flaticon-chat-1"></i><span
+                                                         class="m-menu__link-text">Customer Feedbacks</span><i class="m-menu__hor-arrow la la-angle-right"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                                    <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right"><span class="m-menu__arrow "></span>
+                                                        <ul class="m-menu__subnav">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Customer Feedbacks</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Supplier Feedbacks</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Reviewed Feedbacks</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Resolved Feedbacks</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Feedback Reports</span></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-user"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text"> Shared Contacts </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-shirtsinbulk"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text"> Bulk Module </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-tasks"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">  Task Running  </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-map-o"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">  Mailbox Plans  </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-outdent"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">  SMTP Logs   </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
+                                                <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Register Member</span></a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" aria-haspopup="true">
-                                        <a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link">
-                                            <span class="m-menu__item-here"></span><span class="m-menu__link-text">Migrations</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i>
-                                        </a>
-                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
-                                            <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+                                             class="m-menu__item-here"></span><span class="m-menu__link-text">Reports</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                        <div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:600px"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                            <div class="m-menu__subnav">
+                                                <ul class="m-menu__content">
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Finance Reports</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-map"></i><span class="m-menu__link-text">Annual Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-user"></i><span class="m-menu__link-text">HR Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">IPO Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-1"></i><span class="m-menu__link-text">Finance Margins</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-2"></i><span class="m-menu__link-text">Revenue Reports</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Project Reports</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Coca Cola
+                                                                        CRM</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Delta
+                                                                        Airlines Booking Site</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Malibu
+                                                                        Accounting</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Vineseed
+                                                                        Website Rewamp</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Zircon
+                                                                        Mobile App</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Mercury CMS</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-menu__item  m-menu__item--submenu" m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span class="m-menu__item-here"></span><span
+                                             class="m-menu__link-text">Orders</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                        <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                            <div class="m-menu__subnav">
+                                                <ul class="m-menu__content">
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Finance Reports</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-map"></i><span class="m-menu__link-text">Annual Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-user"></i><span class="m-menu__link-text">HR Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">IPO Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-1"></i><span class="m-menu__link-text">Finance Margins</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-2"></i><span class="m-menu__link-text">Revenue Reports</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Project Reports</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Coca Cola
+                                                                        CRM</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Delta
+                                                                        Airlines Booking Site</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Malibu
+                                                                        Accounting</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Vineseed
+                                                                        Website Rewamp</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Zircon
+                                                                        Mobile App</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--line"><span></span></i><span class="m-menu__link-text">Mercury CMS</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">HR Reports</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Staff
+                                                                        Directory</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Client
+                                                                        Directory</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Salary
+                                                                        Reports</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Staff
+                                                                        Payslips</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Corporate
+                                                                        Expenses</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Project
+                                                                        Expenses</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="m-menu__item">
+                                                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Reporting Apps</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                                                        <ul class="m-menu__inner">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Report Adjusments</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Sources & Mediums</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Reporting Settings</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Conversions</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Report Flows</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><span class="m-menu__link-text">Audit & Logs</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel m-menu__item--more m-menu__item--icon-only" m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle"
+                                         title="Non functional dummy link"><span class="m-menu__item-here"></span><i class="m-menu__link-icon flaticon-more-v3"></i><span class="m-menu__link-text"></span></a>
+                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--pull"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
                                             <ul class="m-menu__subnav">
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-random"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Migrations</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
+                                                <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-business"></i><span class="m-menu__link-text">eCommerce</span></a></li>
+                                                <li class="m-menu__item  m-menu__item--submenu" m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true"><a href="crud/datatable_v1.html" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-computer"></i><span
+                                                         class="m-menu__link-text">Audience</span><i class="m-menu__hor-arrow la la-angle-right"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                                    <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right"><span class="m-menu__arrow "></span>
+                                                        <ul class="m-menu__subnav">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Active Users</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-interface-1"></i><span class="m-menu__link-text">User Explorer</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-lifebuoy"></i><span class="m-menu__link-text">Users Flows</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-1"></i><span class="m-menu__link-text">Market Segments</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic"></i><span class="m-menu__link-text">User Reports</span></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-tasks"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text">Logs</span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="m-menu__item " aria-haspopup="true">
-                                                    <a href="#" class="m-menu__link ">
-                                                        <i class="m-menu__link-icon fa fa-sitemap"></i>
-                                                        <span class="m-menu__link-title">
-                                                            <span class="m-menu__link-wrap">
-                                                                <span class="m-menu__link-text"> Test Imap Settings </span>
-                                                            </span>
-                                                        </span>
-                                                    </a>
+                                                <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-map"></i><span class="m-menu__link-text">Marketing</span></a></li>
+                                                <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-2"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap">
+                                                                <span class="m-menu__link-text">Campaigns</span> <span class="m-menu__link-badge"><span class="m-badge m-badge--success">3</span></span> </span></span></a></li>
+                                                <li class="m-menu__item  m-menu__item--submenu" m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><i class="m-menu__link-icon flaticon-infinity"></i><span
+                                                         class="m-menu__link-text">Cloud Manager</span><i class="m-menu__hor-arrow la la-angle-right"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                                    <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left"><span class="m-menu__arrow "></span>
+                                                        <ul class="m-menu__subnav">
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-add"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span
+                                                                             class="m-menu__link-text">File Upload</span> <span class="m-menu__link-badge"><span class="m-badge m-badge--danger">3</span></span> </span></span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-signs-1"></i><span class="m-menu__link-text">File Attributes</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-folder"></i><span class="m-menu__link-text">Folders</span></a></li>
+                                                            <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-cogwheel-2"></i><span class="m-menu__link-text">System Settings</span></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="m-menu__item  " aria-haspopup="true"><a href="#" class="m-menu__link "><span class="m-menu__item-here"></span><span class="m-menu__link-text">Billing</span></a></li>
-                                    <li class="m-menu__item   " aria-haspopup="true"><a href="index.html" class="m-menu__link "><span class="m-menu__item-here"></span><span class="m-menu__link-text">Tickets</span></a></li>
-
                                 </ul>
                             </div>
                         </div>
 
                         <!-- end::Horizontal Menu -->
+
                         <!--begin::Search-->
+                        <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-" id="m_quicksearch"
+                         m-quicksearch-mode="default">
+
+                            <!--begin::Search Form -->
+                            <form class="m-header-search__form">
+                                <div class="m-header-search__wrapper">
+                                    <span class="m-header-search__icon-search" id="m_quicksearch_search">
+                                        <i class="la la-search"></i>
+                                    </span>
+                                    <span class="m-header-search__input-wrapper">
+                                        <input autocomplete="off" type="text" name="q" class="m-header-search__input" value="" placeholder="Search..." id="m_quicksearch_input">
+                                    </span>
+                                    <span class="m-header-search__icon-close" id="m_quicksearch_close">
+                                        <i class="la la-remove"></i>
+                                    </span>
+                                    <span class="m-header-search__icon-cancel" id="m_quicksearch_cancel">
+                                        <i class="la la-remove"></i>
+                                    </span>
+                                </div>
+                            </form>
+
+                            <!--end::Search Form -->
+
+                            <!--begin::Search Results -->
+                            <div class="m-dropdown__wrapper">
+                                <div class="m-dropdown__arrow m-dropdown__arrow--center"></div>
+                                <div class="m-dropdown__inner">
+                                    <div class="m-dropdown__body">
+                                        <div class="m-dropdown__scrollable m-scrollable" data-scrollable="true" data-height="300" data-mobile-height="200">
+                                            <div class="m-dropdown__content m-list-search m-list-search--skin-light">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--end::Search Results -->
+                        </div>
+
                         <!--end::Search-->
                     </div>
                 </div>
             </div>
-            <!-- <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;" class="toast_notification_main">
-
-                <div style="position: absolute; top: 0; right: 0;">
-
-
-                    <div class="toast warning_msg_content" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header toast_notification">
-
-                            <strong class="mr-auto">Warning Your Package is about to expire</strong>
-                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="toast warning_msg_content" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header toast_notification">
-
-                            <strong class="mr-auto">Warning Your Package business is about to expire</strong>
-                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
         </header>
 
     </div>
@@ -511,42 +585,34 @@
                 <!-- BEGIN: Subheader -->
                 <div class="m-subheader ">
                     <div class="d-flex align-items-center">
-                        <div class="mr-auto">
-                            <h3 class="m-subheader__title">
-                                Dashboard
-                            </h3>
-                        </div>
-                        <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch" m-quicksearch-mode="default">
-                            <select class="form-control m-bootstrap-select m_selectpicker">
-                                <option>
-                                    dir.com
-                                </option>
-                                <option>
-                                    dir.com
-                                </option>
-                                <option>
-                                    dir.com
-                                </option>
-                            </select>
-                            <span class="m-pro_text">Pro Plan 200 GB</span>
-
+                        <div class="mx-auto row">
+                            <div class="mr-auto col-md-6 col-xs-12">
+                                <h3 class="m-subheader__title m-subheader__title--separator">
+                                    Mailboxes
+                                </h3>
+                                <div class="btn-group btn-breadcrumb">
+                                    <a href="#" class="btn btn-default"><i class="fa fa-home"></i></a>
+                                    <a href="#" class="btn btn-default">Mailboxes</a>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <select class="form-control pckg_select pull-right ng-pristine ng-valid ng-touched">
+                                    <!---->
+                                    <option value="1170" class="ng-star-inserted">Enterprise Plan 1TB</option>
+                                </select>
+                                <select class="form-control pckg_select pull-right ng-pristine ng-valid ng-touched">
+                                    <!---->
+                                    <option value="1170" class="ng-star-inserted">Enterprise Plan 1TB</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-  dashboard_select" id="m_quicksearch_two" m-quicksearch-mode="default">
-                        <select class="form-control m-bootstrap-select m_selectpicker">
-                            <option>
-                                dir.com
-                            </option>
-                            <option>
-                                dir.com
-                            </option>
-                            <option>
-                                dir.com
-                            </option>
-                        </select>
-                        <span class="m-pro_text">Pro Plan 200 GB</span>
 
-                    </div>
+                    <!-- <a href="" class="btn default-btn">Submit</a>
+                        <button class="btn default-btn">Submit</button>
+                        <input type="submit" class="btn default-btn" value="Submit">
+                        <a class="green_btn ng-star-inserted" href="/exchange/add-mailbox"><span><i class="la la-plus"></i><span>Add Mailbox</span></span></a>  -->
                 </div>
                 <!-- END: Subheader -->
                 <!--Begin::Section-->
